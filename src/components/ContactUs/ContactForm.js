@@ -1,7 +1,34 @@
 import React from "react";
 import "./ContactForm.css"; // Import the CSS file
-
+import { useNavigate } from 'react-router-dom';
 const ContactForm = () => {
+  const navigate = useNavigate();
+  const handleSubs = async (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.target);
+    formData.append("access_key", "b5abfd5d-25ff-4873-9f66-f528994278df");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        window.alert("Subscribed Successfully");
+        event.target.reset();
+        navigate('/thank-you');
+      } else {
+        console.log("Error", data);
+        window.alert(data.message || "An error occurred. Please try again.");
+      }
+    } catch (error) {
+      window.alert("Network error. Please check your connection and try again.");
+    }
+  };
   return (
     <div className="contact-container">
       {/* Left Images Section */}
@@ -39,7 +66,7 @@ const ContactForm = () => {
           Fill out the form below or reach us by phone or email, and we’ll be
           happy to assist you.
         </p>
-        <form>
+        <form onSubmit={handleSubs}>
           <label>NAME</label>
           <input type="text" placeholder="Your Name" />
 

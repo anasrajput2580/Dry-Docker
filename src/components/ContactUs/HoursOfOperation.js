@@ -9,7 +9,7 @@ const HoursOfOperation = () => {
         <iframe
           title="location-map"
           className="map-iframe"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509556!2d144.9537353159048!3d-37.81627974202112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf57772c3c34588aa!2sGarden%20Grill%20%26%20Dry%20Dock%20Bistro!5e0!3m2!1sen!2sus!4v1634378404743!5m2!1sen!2sus"
+           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.1234567890!2d-74.123456789!3d40.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c254c123456789%3A0x123456789abcdef!2s78%20John%20Miller%20Way%2C%20Kearny%2C%20NJ%2007032!5e0!3m2!1sen!2sus!4v1691234567890!5m2!1sen!2sus"
           allowFullScreen=""
           loading="lazy"
         ></iframe>
