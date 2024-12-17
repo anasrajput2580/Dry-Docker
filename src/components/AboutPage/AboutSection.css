@@ -1,0 +1,70 @@
+/* General Container Styling */
+.about-container {
+    font-family: "Times New Roman", serif;
+    color: #333;
+  }
+  
+  /* Top Banner Section */
+  .top-banner {
+    background-color: #223d3c; /* Dark Green */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 40px;
+  }
+  
+  .top-banner h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    font-style: "Inria Serif";
+  }
+  
+  .top-banner p {
+    font-size: 12px;
+    margin: 10px 0;
+    font-style: "Inria Serif";
+  }
+  
+  .top-banner strong {
+    font-weight: bold;
+  }
+  
+  /* Bottom Section */
+  .bottom-section {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f5f1f1;
+    padding: 40px;
+    gap: 20px;
+  }
+  
+  .image-container {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .text-container {
+    flex: 1;
+    min-width: 300px;
+    margin-top: 70px;
+  }
+  
+  .text-container h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .text-container p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  

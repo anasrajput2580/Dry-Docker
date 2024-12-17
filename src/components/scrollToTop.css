@@ -1,0 +1,21 @@
+.scroll-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .scroll-to-top:hover {
+    background-color: #722410; /* Highlight color on hover */
+  }
+  
+  .arrow-up-icon {
+    display: block;
+  }
+  

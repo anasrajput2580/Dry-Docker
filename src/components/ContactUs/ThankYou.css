@@ -1,0 +1,288 @@
+/* General Styles */
+.banner-ty {
+    background-position: center;
+    color: #000;
+    position: relative;
+}
+.navbar-ty {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    margin-top: -10px;
+    /* margin-bottom: -50px; */
+  }
+ 
+  
+  /* Styling for the logo image */
+  .logo-ty .home-button-ty {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+  
+  }
+  
+  .logo-img-ty {
+    width: auto; /* Ensures the logo maintains its original proportions */
+    height: 70px; /* Adjust height to fit your desired logo size */
+    object-fit: contain; /* Ensures the logo does not get cropped */
+    margin-left: 10px; /* Adjust left margin for positioning */
+    margin-top: -10px; /* Adjust top margin for spacing */
+  }
+  
+  .menu-ty {
+    display: flex;
+    list-style: none;
+  
+    /*This margin set the gap between home and menu*/
+    margin-left: 200px;
+    margin-top: 20px;
+    justify-content: space-around;
+    color: #223d3c;
+  }
+  
+.menu-ty li {
+    margin-right: 80px;
+    margin-bottom: 40px;
+  }
+  
+  .menu-ty li a {
+    font-family: 'Inria Serif', sans-serif;
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+  
+  }
+  /* Active menu item styling */
+  /* Default link style */
+  .menu-ty li a {
+    color: #000;  /* Default color */
+    text-decoration: none; /* Ensure no underline */
+  }
+  
+  /* Style for the active menu item */
+  .menu-ty li a.active {
+    color: #f8cf40;  /* Yellow color for the active menu item */
+  }
+
+.banner-ty::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    color: #000;
+    z-index: -2; /* Ensure it doesn't overlap */
+}
+
+.thank-you-page {
+    position: relative;
+    padding: 40px;
+    background-color: #223d3c;
+    color: #ffffff;
+    text-align: center;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Ensures main content is above side images */
+}
+
+/* Side Background Images */
+.side-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1000px;
+    opacity: 0.7;
+    z-index: -1; /* Ensure side images are behind main content */
+}
+
+.side-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.left-image {
+    left: 0;
+}
+
+.right-image {
+    right: 0;
+}
+/* Green Tick */
+.green-tick {
+    width: 60px;
+    height: 60px;
+    background-color: #28a745;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    margin: 20px auto;
+    
+}
+.green-tick::after {
+    content: "✓";
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+/* Text */
+.ty-content h1 {
+    color: #ffffff;
+    font-size: 40px;
+    margin: 20px 0 10px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+}
+
+.ty-content p {
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0.9;
+    text-align: center;
+}
+.ty-content {
+    position: relative; /* Ensure content is on top of other elements */
+    margin-bottom: 250px;
+}
+
+/* Buttons */
+.button-group {
+    margin: 20px 0;
+    display: flex;
+    gap: 140px;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 2; /* Ensure buttons are on top */
+}
+
+.button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #f8cf40;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #f8cf40;
+    color: #000;
+}
+.j-line {
+    border: none;
+    border-top: 3px solid #ffffff; /* Dark line below header */
+    margin: 10px auto 20px;
+    width: 70%; 
+}
+/* Social Media Section */
+.social-media {
+    margin-top: 30px;
+}
+
+.social-media p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+.social-icon-map {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.social-icons-ty i {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.social-icons i:hover {
+    color: #ffffff;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-ty {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .logo-img-ty {
+        width: 180px;
+    }
+  
+    .menu-ty {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .menu-ty li {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .side-image {
+        display: none; /* Hide side images on tablets and smaller screens */
+    }
+
+    .thank-you-page h1 {
+        font-size: 28px;
+    }
+
+    .thank-you-page p {
+        font-size: 16px;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .social-media p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-img-ty {
+        width: 150px;
+    }
+    .thank-you-page h1 {
+        font-size: 24px;
+    }
+
+    .thank-you-page p {
+        font-size: 14px;
+    }
+
+    .button {
+        font-size: 14px;
+    }
+
+    .social-icons i {
+        font-size: 18px;
+    }
+}

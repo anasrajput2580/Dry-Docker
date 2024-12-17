@@ -1,0 +1,51 @@
+/* Full container styling */
+.cta-container {
+    background-color: #25403b; /* Dark green background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* Full viewport height */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Content section styling */
+  .cta-content {
+    max-width: 800px; /* Limit the width for proper centering */
+    margin-bottom: 30px; /* Space between text and button */
+  }
+  
+  .cta-header {
+    font-size: 32px; /* Header font size */
+    font-weight: bold;
+    color: #ffffff; /* White font color */
+    margin: 0 0 15px 0; /* Space below header */
+  }
+  
+  .cta-subtext {
+    font-size: 18px; /* Subtext font size */
+    color: #d0d0d0; /* Light gray font color */
+    margin: 0;
+  }
+  
+  /* Button styling */
+  .cta-button {
+    background-color: #ffffff; /* White background */
+    color: #25403b; /* Dark green text color */
+    font-size: 16px; /* Font size */
+    font-weight: bold;
+    padding: 12px 24px; /* Padding for the button */
+    border: none; /* Remove border */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animation on hover */
+  }
+  
+  .cta-button:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+  }
+  
