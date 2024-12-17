@@ -72,7 +72,7 @@ function CateringPage() {
     <>
       <Banner
       title="The Perfect Menu for Your Event"
-      videoSrc="/Catering/Catering.mp4" 
+      videoSrc="/CateringPage/Catering.mp4" 
        />
         <ContinentalBreakfastCatering/>
         <HotBreakfastCatering/>

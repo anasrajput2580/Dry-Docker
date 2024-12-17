@@ -1,70 +1,164 @@
 /* General Container Styling */
 .about-container {
-    font-family: "Times New Roman", serif;
-    color: #333;
-  }
-  
-  /* Top Banner Section */
-  .top-banner {
-    background-color: #223d3c; /* Dark Green */
-    color: #ffffff;
-    text-align: center;
-    padding: 20px 40px;
-  }
-  
+  font-family: "Times New Roman", serif;
+  color: #333;
+}
+
+/* Top Banner Section */
+.top-banner {
+  background-color: #223d3c; /* Dark Green */
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 40px;
+}
+
+.top-banner h1 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  font-family: "Inria Serif", serif;
+}
+
+.top-banner p {
+  font-size: 12px;
+  margin: 10px 0;
+  font-family: "Inria Serif", serif;
+}
+
+.top-banner strong {
+  font-weight: bold;
+}
+
+/* Bottom Section */
+.bottom-section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f5f1f1;
+  padding: 40px;
+  gap: 20px;
+}
+
+.image-container {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.text-container {
+  flex: 1;
+  min-width: 300px;
+  margin-top: 70px;
+}
+
+.text-container h2 {
+  font-size: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.text-container p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablets and Smaller Screens */
+@media screen and (max-width: 1024px) {
   .top-banner h1 {
-    font-size: 25px;
-    margin-bottom: 10px;
-    text-decoration: underline;
-    font-style: "Inria Serif";
+      font-size: 22px;
   }
-  
   .top-banner p {
-    font-size: 12px;
-    margin: 10px 0;
-    font-style: "Inria Serif";
+      font-size: 11px;
   }
-  
-  .top-banner strong {
-    font-weight: bold;
-  }
-  
-  /* Bottom Section */
+
   .bottom-section {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #f5f1f1;
-    padding: 40px;
-    gap: 20px;
+      padding: 30px;
+      gap: 15px;
   }
-  
-  .image-container {
-    flex: 1;
-    min-width: 300px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .image-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
+
   .text-container {
-    flex: 1;
-    min-width: 300px;
-    margin-top: 70px;
+      margin-top: 50px;
   }
-  
+
   .text-container h2 {
-    font-size: 30px;
-    margin-bottom: 50px;
-    text-align: center;
+      font-size: 26px;
   }
-  
+
   .text-container p {
-    font-size: 14px;
-    line-height: 1.8;
+      font-size: 13px;
   }
-  
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 768px) {
+  .top-banner {
+      padding: 15px 20px;
+  }
+
+  .top-banner h1 {
+      font-size: 20px;
+  }
+
+  .top-banner p {
+      font-size: 10px;
+  }
+
+  .bottom-section {
+      padding: 20px;
+      flex-direction: column; /* Stack elements vertically */
+      gap: 10px;
+  }
+
+  .text-container {
+      margin-top: 30px;
+      text-align: center;
+  }
+
+  .text-container h2 {
+      font-size: 22px;
+  }
+
+  .text-container p {
+      font-size: 12px;
+      line-height: 1.6;
+  }
+}
+
+/* Very Small Devices (Phones) */
+@media screen and (max-width: 480px) {
+  .top-banner {
+      padding: 10px 15px;
+  }
+
+  .top-banner h1 {
+      font-size: 18px;
+  }
+
+  .top-banner p {
+      font-size: 9px;
+  }
+
+  .bottom-section {
+      padding: 10px;
+  }
+
+  .text-container {
+      margin-top: 20px;
+  }
+
+  .text-container h2 {
+      font-size: 20px;
+  }
+
+  .text-container p {
+      font-size: 11px;
+  }
+}

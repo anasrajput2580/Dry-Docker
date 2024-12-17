@@ -6,21 +6,21 @@
   padding: 2vw; /* Responsive padding */
   position: relative;
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* z-index: 1; */
-}
-.menu {
-  display: flex;
-  /* padding: 20px 0; */
-  list-style: none;
-  padding-left: 0;
-  margin-left: 30vw;
 }
 
 /* Menu styling */
+.menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin-left: 28vw;
+}
+
 .menu ul {
   list-style: none;
   padding: 0;
@@ -39,32 +39,33 @@
   text-decoration: none;
   margin-right: 3vw;
 }
-.menu li {
 
-  gap: 150px;
-}
 .menu li a {
   color: #000000;
   text-decoration: none;
   margin-right: 6vw;
 }
+
 .menu ul li.bold {
   font-weight: bold;
 }
+
 .menu li a.active {
-  color: #000000; /* Yellow color for the active menu item */
+  color: #000000;
   font-weight: bolder;
 }
+
 .menu li a:hover {
   color: #f8cf40;
 }
+
 /* Header section styling */
 .header {
   background-color: #223d3c;
 }
 
 .header .logo {
-  height: 100px; /* Adjust based on your logo size */
+  height: 100px;
 }
 
 .header h1 {
@@ -87,14 +88,108 @@
 
 .video-container {
   position: relative;
-  height: 70vh; /* Set the desired height */
-  overflow: hidden; /* Ensure no overflow occurs */
+  height: 70vh;
+  overflow: hidden;
 }
 
 .video {
   width: 95%;
-  height: 100%; /* Ensure it fills the container */
-  object-fit: cover; /* Adjusts scaling behavior */
+  height: 100%;
+  object-fit: cover;
 }
 
+/* Responsive Media Queries */
 
+/* Tablet devices */
+@media (max-width: 1024px) {
+  .menu {
+    margin-left: 10vw; /* Reduce margin for tablets */
+  }
+
+  .menu ul {
+    gap: 50px; /* Reduce gap between menu items */
+  }
+
+  .menu ul li {
+    font-size: 18px; /* Slightly smaller font */
+    margin-right: 2vw; /* Adjust spacing */
+  }
+
+  .header .logo {
+    height: 80px; /* Adjust logo size */
+  }
+
+  .header h1 {
+    font-size: 12px;
+  }
+
+  .statement {
+    font-size: 22px; /* Slightly smaller font */
+  }
+
+  .video-container {
+    height: 50vh; /* Reduce video container height */
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack navbar items vertically */
+    text-align: center;
+  }
+
+  .menu {
+    margin-left: 0; /* Remove left margin */
+    margin-top: 10px;
+  }
+
+  .menu ul {
+    flex-direction: column; /* Stack menu items vertically */
+    gap: 20px; /* Add spacing between menu items */
+  }
+
+  .menu ul li {
+    font-size: 16px; /* Smaller font for mobile */
+    margin-right: 0;
+  }
+
+  .header .logo {
+    height: 70px; /* Adjust logo size for mobile */
+  }
+
+  .header h1 {
+    font-size: 10px; /* Smaller font for mobile */
+  }
+
+  .statement {
+    font-size: 18px; /* Reduce font size */
+  }
+
+  .video-container {
+    height: 40vh; /* Reduce video height */
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .menu ul {
+    gap: 15px; /* Reduce gap further */
+  }
+
+  .menu ul li {
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .header .logo {
+    height: 60px;
+  }
+
+  .header h1 {
+    font-size: 9px;
+  }
+
+  .statement {
+    font-size: 16px;
+  }
+}

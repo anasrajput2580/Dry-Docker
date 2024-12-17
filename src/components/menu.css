@@ -1,141 +1,202 @@
 .menu-container {
-    width: 97%;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-    color: #333;
-    padding: 20px;
-    line-height: 1.6;
-  }
-  .menu-line {
-    border: none;
-    border-top: 3px solid #223d3c; /* Dark line below header */
-    margin: 10px auto 20px;
-    width: 70%;
-  }
+  width: 97%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.menu-line {
+  border: none;
+  border-top: 3px solid #223d3c; /* Dark line below header */
+  margin: 10px auto 20px;
+  width: 70%;
+}
+
 .menu-header {
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #333;
-  }
- .special-header{
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.special-header {
   color: #722410;
   text-align: center;
- } 
- .bev-header{
+}
+
+.bev-header,
+.catering-header {
   margin-top: 15px;
   text-align: center;
   font-size: 20px;
   font-weight: bold;
- }
- .catering-header {
+}
 
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
- }
- .catering-sub-header{
+.catering-sub-header {
   text-align: center;
   font-size: 13px;
- }
-  .menu-section-header {
-    background-color: #2f4f4f;
-    color: #fff;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
+}
+
+.menu-section-header {
+  background-color: #2f4f4f;
+  color: #fff;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.food-header {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  color: #000;
+  margin-left: 200px;
+  font-size: 14px;
+}
+
+.food-header-price {
+  font-weight: bold;
+  color: #000;
+  font-size: 14px;
+  margin-right: 200px;
+}
+
+.food-option {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  padding-left: 20px;
+  margin-left: 200px;
+  font-size: 14px;
+}
+
+.food-price {
+  font-weight: bold;
+  color: #000;
+  margin-right: 200px;
+  font-size: 14px;
+}
+
+.card-list li {
+  display: flex;
+  align-items: center;
+}
+
+.card-list li::before {
+  content: '✔';
+  color: #13ab25;
+  margin-right: 10px;
+  font-size: 40px;
+}
+
+/* Responsive Design */
+
+/* Tablet devices (1024px and below) */
+@media (max-width: 1024px) {
+  .menu-line {
+    width: 80%; /* Adjust line width */
   }
-  .food-header {
-    font-size: 16px;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-    color: #000;
-    margin-left: 200px;
-    font-size: 14px;
-  }
-  
-  .food-header-price {
-    font-weight: bold;
-    color: #000;
-    font-size: 14px;
-    margin-right: 200px;
-  }
-  
+
+  .food-header,
   .food-option {
-    display: flex;
-    justify-content: space-between;
-    margin: 5px 0;
-    padding-left: 20px;
-    margin-left: 200px;
-    font-size: 14px;
+    margin-left: 100px; /* Reduce left margin */
   }
-  
+
+  .food-header-price,
   .food-price {
-    font-weight: bold;
-    color: #000;
-    margin-right: 200px;
+    margin-right: 100px; /* Reduce right margin */
+  }
+
+  .menu-header,
+  .menu-section-header {
+    font-size: 18px; /* Adjust font size */
+  }
+
+  .bev-header,
+  .catering-header {
+    font-size: 18px;
+  }
+
+  .card-list li::before {
+    font-size: 30px; /* Reduce checkmark size */
+  }
+}
+
+/* Mobile devices (768px and below) */
+@media (max-width: 768px) {
+  .menu-line {
+    width: 90%; /* Adjust line width */
+  }
+
+  .menu-header,
+  .menu-section-header {
+    font-size: 16px; /* Reduce header font size */
+  }
+
+  .bev-header,
+  .catering-header {
+    font-size: 16px;
+  }
+
+  .food-header,
+  .food-option {
+    flex-direction: column; /* Stack items vertically */
+    margin-left: 20px; /* Adjust margin */
     font-size: 14px;
   }
-  .card-list li {
-    display: flex;
-    align-items: center;
-    /* margin-bottom: 10px; */
+
+  .food-header-price,
+  .food-price {
+    margin-right: 20px; /* Adjust right margin */
   }
-  
-  /* Adding the checkmark next to list items */
+
+  .catering-sub-header {
+    font-size: 12px; /* Adjust sub-header font size */
+  }
+
   .card-list li::before {
-    content: '✔';
-    color: #13ab25;
+    font-size: 25px; /* Reduce checkmark size */
+  }
+}
+
+/* Small mobile devices (480px and below) */
+@media (max-width: 480px) {
+  .menu-line {
+    width: 95%; /* Full width */
+  }
+
+  .menu-header,
+  .menu-section-header {
+    font-size: 14px;
+  }
+
+  .bev-header,
+  .catering-header {
+    font-size: 14px;
+  }
+
+  .food-header,
+  .food-option {
+    margin-left: 10px;
+    font-size: 12px;
+  }
+
+  .food-header-price,
+  .food-price {
     margin-right: 10px;
-    font-size: 40px;
   }
-  @media (max-width: 768px) {
-    html {
-      font-size: 90%; /* Slightly reduce font size on tablets */
-    }
+
+  .card-list li::before {
+    font-size: 20px; /* Smaller checkmark */
   }
-  
-  @media (max-width: 480px) {
-    html {
-      font-size: 80%; /* Reduce font size further for mobile */
-    }
-    .food-header {
-      font-size: 16px;
-      font-weight: bold;
-      display: flex;
-      justify-content: space-between;
-      margin-top: 15px;
-      color: #000;
-      margin-left: 10px;
-      font-size: 14px;
-    }
-    
-    .food-header-price {
-      font-weight: bold;
-      color: #000;
-      font-size: 14px;
-      /* margin-right: 200px; */
-    }
-    
-    .food-option {
-      display: flex;
-      justify-content: space-between;
-      margin: 5px 0;
-      padding-left: 20px; 
-      margin-left: 10px;
-      font-size: 12px;
-    }
-    
-    .food-price {
-      font-weight: bold;
-      color: #000;
-      /* margin-right: 200px; */
-      /* margin-left: 100px; */
-      font-size: 12px;
-    }
+
+  .menu-container {
+    padding: 10px; /* Reduce padding */
   }
-  
+}
