@@ -1,16 +1,19 @@
 
 /* General banner styling */
 .banner {
-  background-color: #ffffff;
+  background-color:#ffffff;
   text-align: center;
-  padding: 2vw; /* Responsive padding */
+  padding: 1.4vw; /* Responsive padding */
   position: relative;
+  margin-top: -20px;
+
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 /* Menu styling */
@@ -32,7 +35,7 @@
 
 .menu ul li {
   font-family: "Inria Serif", serif;
-  font-size: 20px;
+  font-size: 14px;
   color: #000000;
   cursor: pointer;
   text-transform: capitalize;
@@ -62,6 +65,8 @@
 /* Header section styling */
 .header {
   background-color: #223d3c;
+  width: 103%;
+  margin-left:-20px;
 }
 
 .header .logo {
@@ -80,7 +85,7 @@
 /* Statement styling */
 .statement {
   font-family: "Inria Serif", serif;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: bold;
   color: #000000;
   margin-top: 10px;
@@ -88,8 +93,9 @@
 
 .video-container {
   position: relative;
-  height: 70vh;
+  height: 60vh;
   overflow: hidden;
+  margin-top: -15px;
 }
 
 .video {

@@ -6,6 +6,7 @@ const EggsOmeletsMenu = () => {
     <div className="menu-container">
       {/* Menu Header */}
       <div className="menu-section-header">3-Egg Omelets</div>
+      <div className="special-header">Served with Yukon-gold home Šies & choice of toast or bagel, add $1.5  for egg white</div>
       <div className="food-header">
         Cheese Omelet  
         <span className="food-header-price">$7.75</span>
@@ -73,7 +74,6 @@ const EggsOmeletsMenu = () => {
       {/*Food Header*/}
       <div className="food-header">
       Flat Iron Steak      
-        <span className="food-price">$12.00</span>
       </div>
       <div className="food-option">
         <span></span>      

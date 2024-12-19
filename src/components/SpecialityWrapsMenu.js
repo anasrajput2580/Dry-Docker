@@ -67,7 +67,6 @@ const SpecialityWrapsMenu = () => {
         {/*Food Header*/}
      <div className="food-header">
         Flat Iron Steak Fajita Wrap   
-        <span className="food-price">$12.00</span> 
       </div>
       <div className="food-option">
         <span>    </span>     

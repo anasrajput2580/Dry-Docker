@@ -23,14 +23,14 @@ const Footer = () => {
         </div>
 
         <div className="footer-section">
-          <FaClock className="footer-icon" />Hours
+          <FaClock className="footer-icon" /><b>Hours</b>
           <p>Mon.-Fri. 6:30 AM - 4:00 PM<br/>
            Sat. 7:00 AM - 2:00 PM</p>
         </div>
 
         <div className="footer-section">
           <FaMapMarkerAlt className="footer-icon" />
-          Location
+         <b>Location</b>
           <p><b>Come visit us at:</b><br/>
              78 John Miller Way<br/>
              Kearny, NJ 07032<br/>
@@ -38,16 +38,19 @@ const Footer = () => {
         </div>
         
         <div className="footer-contact-map">
-          <div className="footer-section">
-            <FaPhoneAlt className="footer-icon" />
-            Contact
-            <p>Phone: (862) 300-3307 <br/>
-              Email:{" "}
-              <a href="mailto:DryDockBistro7@gmail.com" className="footer-link">
-                DryDockBistro7@gmail.com
-              </a>
-            </p>
-          </div>
+  <div className="footer-section">
+    <FaPhoneAlt className="footer-icon" />
+    <b>Contact</b>
+    <p>
+      Phone: (862) 300-3307 <br />
+      Email: 
+      <a href="mailto:DryDockBistro7@gmail.com" className="footer-link">
+        DryDockBistro7@gmail.com
+      </a>
+    </p>
+  </div>
+
+
           
           <div className="vertical-divider"></div>
 
@@ -92,15 +95,15 @@ const Footer = () => {
     </div>
           </div>
         </div>
-      </div>
-
-      <div className="footer-note">
+        <div className="footer-note">
         <p>
           <strong>Please note:</strong> All information on this website,
-          including menu items, prices, and hours, is subject to change without
-          notice. For the most accurate information, please contact us directly.
+          including menu items, prices, and hours, is subject to change without notice. For the most accurate information, please contact us directly.
         </p>
       </div>
+      </div>
+
+      
     </footer>
   );
 };

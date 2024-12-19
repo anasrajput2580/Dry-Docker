@@ -6,77 +6,43 @@ const frenchToastMenu = () => {
     <div className="menu-container">
       {/* Menu Header */}
       <div className="menu-section-header">French Toast & Pancakes</div>
+      <div className="special-header">Add turkey bacon, beef bacon, turkey sausage, smoked turkey ham or beef salami </div>
       <div className="food-header">
-        Cheese Omelet  
-        <span className="food-header-price">$7.75</span>
+      Challah French Toast  
+        <span className="food-header-price">$7.00</span>
       </div>
       {/*Food Options*/}
       <div className="food-option">
-      <span></span>
+      <span>with butter & maple syrup</span>
       </div>
       {/*Food Header*/}
       <div className="food-header">
-         Peppers & Onion Omelet 
-        <span className="food-price">$8.25</span>
+      Butter-Milk Pancakes 
+        <span className="food-price">$7.75</span>
       </div>
       <div className="food-option">
-        <span></span>      
+        <span>with butter & maple syrup</span>      
       </div>
       {/*Food Header*/}
       <div className="food-header">
-        Greek Omelet
+      Chocolate Chip, Blueberry, Peanut Butter or Banana Pancakes 
+      <span className="food-price">$8.75</span>
       </div>
       <div className="food-option">
-        <span>with spinach, onion, olives & feta  </span>
-        <span className="food-price">$9.75</span>
+        <span>  </span>
+        <span> </span>
       </div>
           {/*Food Header*/}
       <div className="food-header">
-         NY Corned Beef Omelet  
-        <span className="food-price">$10.00</span>
+      Belgium WafflE 
       </div>
       <div className="food-option">
-        <span></span>      
-      </div>
-      {/*Food Header*/}
-      <div className="food-header">
-            Western Omelet     
-        <span className="food-price">$9.00</span>
-       </div>
-      <div className="food-option">
-        <span></span>      
-      </div>
-            {/*Food Header*/}
-      <div className="food-header">
-         grilled Veggie & Goat 
-        <span className="food-price">$8.75</span>
-       </div>
-      <div className="food-option">
-        <span></span>      
-      </div>
-             {/*Food Header*/}
-      <div className="food-header">
-      Fresh Mushroom        
-        <span className="food-price">$9.00</span>
+        <span>with butter & maple syrup</span>    
+        <span className="food-price">$7.75</span>  
       </div>
       <div className="food-option">
-        <span></span>      
-      </div>
-      {/*Food Header*/}
-      <div className="food-header">
-      Smoked Salmon       
-        <span className="food-price">$12.00</span>
-      </div>
-      <div className="food-option">
-        <span></span>      
-      </div>
-      {/*Food Header*/}
-      <div className="food-header">
-      Flat Iron Steak      
-        <span className="food-price">$12.00</span>
-      </div>
-      <div className="food-option">
-        <span></span>      
+        <span>with fresh strawberry & whipped cream</span>    
+        <span className="food-price">$9.00</span>  
       </div>
     </div>
   );

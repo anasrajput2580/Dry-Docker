@@ -6,19 +6,10 @@ const BagelMenu = () => {
     <div className="menu-container">
       {/* Menu Header */}
       <div className="menu-section-header">Bagel & More</div>
-      <div className="food-header">
-         Add turkey bacon, beef bacon, turkey sausage,<br/>  
-         smoked turkey ham or beef salami
-        <span className="food-header-price">$3.00</span>
-      </div>
-      {/*Food Options*/}
-      <div className="food-option">
-      <span></span>
-      </div>
+      <div className="special-header">Plain bagel, poppy, sesame, raisin, onion, salt or everything  </div>
       {/*Food Header*/}
       <div className="food-header">
       Butter Roll 
-        <span className="food-price">$2.00</span>
       </div>
       <div className="food-option">
         <span></span>      
@@ -42,7 +33,6 @@ const BagelMenu = () => {
     {/*Food Header*/}
       <div className="food-header">
             Downtown Bagel 
-        <span className="food-price">$10.00</span>
       </div>
       <div className="food-option">
         <span>With Nova lox, cream cheese, sliced tomato, red onion & capers    </span>

@@ -7,17 +7,8 @@ const HotSandwichesMenu = () => {
       {/* Menu Header */}
       <div className="menu-section-header">Hot Sandwiches & Burgers</div>
       <div className="food-header">
-      NY Corned Beef Sandwich
-        <span className="food-header-price">$9.75</span>
-      </div>
-      {/*Food Options*/}
-      <div className="food-option">
-      <span>Seedless Jewish rye & deli mustard  </span>
-      </div>
-      {/*Food Header*/}
-      <div className="food-header">
-      Pastrami Sandwich 
-        <span className="food-header-price">$10.50</span>
+      NY Corned Beef Sandwich or pastrami sandwich
+        <span className="food-header-price">$10.00</span>
       </div>
       {/*Food Options*/}
       <div className="food-option">
@@ -26,7 +17,7 @@ const HotSandwichesMenu = () => {
     {/*Food Header*/}
     <div className="food-header">
     Chicken Cutlet hoagie
-        <span className="food-header-price">$10.75</span>
+        <span className="food-header-price">$9.75</span>
       </div>
       {/*Food Options*/}
       <div className="food-option">

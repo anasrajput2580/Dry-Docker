@@ -11,6 +11,9 @@ Perfect for any event, big or small, our dishes are made fresh, full of flavor, 
       {/* Menu Header */}
       <div className="menu-section-header">Our Catering Menu That Satisfies Every Taste</div>
       <div className="bev-header">CONTINENTAL BREAKFAST</div>
+      <div className="catering-sub-header">
+      <span>(Minimum 10 Gusts)</span>
+      </div>
       <hr className="menu-line" />
       <div className="food-header">
       Assorted Bagels 

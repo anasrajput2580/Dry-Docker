@@ -1,10 +1,10 @@
 .menu-container {
-  width: 97%;
   margin: 0 auto;
-  font-family: Arial, sans-serif;
+  font-family: "Inria Serif", serif;
   color: #333;
   padding: 20px;
   line-height: 1.6;
+  margin-top: -25px;
 }
 
 .menu-line {
@@ -16,15 +16,15 @@
 
 .menu-header {
   text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-size: 15px;
   color: #333;
+  margin-bottom: 10px;
 }
 
 .special-header {
   color: #722410;
   text-align: center;
+  font-size: 13px;
 }
 
 .bev-header,
@@ -38,54 +38,63 @@
 .catering-sub-header {
   text-align: center;
   font-size: 13px;
+  font-style: italic;
 }
 
 .menu-section-header {
   background-color: #2f4f4f;
   color: #fff;
-  padding: 10px;
+  padding: 2px;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
+  width: 103%;
+  margin-left:-20px;
 }
 
 .food-header {
+  font-family: "Inria Serif", serif;
   font-size: 16px;
-  font-weight: bold;
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
   color: #000;
-  margin-left: 200px;
-  font-size: 14px;
-}
-
-.food-header-price {
+  margin-left: 300px;
+  font-size: 13px;
   font-weight: bold;
+  text-transform: uppercase;
+}
+.food-header span {
+  font-weight: lighter;
+}
+.food-header-price {
   color: #000;
-  font-size: 14px;
-  margin-right: 200px;
+  font-size: 13px;
+  margin-right: 300px;
 }
 
 .food-option {
   display: flex;
   justify-content: space-between;
   margin: 5px 0;
-  padding-left: 20px;
-  margin-left: 200px;
+  /* padding-left: 20px; */
+  margin-left: 300px;
   font-size: 14px;
+  font-style: italic;
 }
 
 .food-price {
-  font-weight: bold;
   color: #000;
-  margin-right: 200px;
+  margin-right: 300px;
   font-size: 14px;
 }
 
 .card-list li {
   display: flex;
   align-items: center;
+  font-family: "Inria Serif", serif;
+  font-size: 8px;
+
 }
 
 .card-list li::before {
@@ -126,6 +135,7 @@
   .card-list li::before {
     font-size: 30px; /* Reduce checkmark size */
   }
+ 
 }
 
 /* Mobile devices (768px and below) */
@@ -159,9 +169,22 @@
   .catering-sub-header {
     font-size: 12px; /* Adjust sub-header font size */
   }
-
   .card-list li::before {
     font-size: 25px; /* Reduce checkmark size */
+  }
+  .food-header,
+  .food-option {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
+    margin-left: 10px; /* Adjust left margin */
+    font-size: 14px; /* Ensure readability */
+  }
+  .food-header-price,
+  .food-price {
+    margin-left: 20px; /* Indent price for readability */
+    margin-top: 5px; /* Add spacing between lines */
+    font-size: 14px;
+    font-weight: bold; /* Highlight prices */
   }
 }
 
@@ -174,6 +197,7 @@
   .menu-header,
   .menu-section-header {
     font-size: 14px;
+
   }
 
   .bev-header,
@@ -189,7 +213,7 @@
 
   .food-header-price,
   .food-price {
-    margin-right: 10px;
+    margin-right: -300px;
   }
 
   .card-list li::before {
@@ -198,5 +222,17 @@
 
   .menu-container {
     padding: 10px; /* Reduce padding */
+  }
+  .food-header,
+  .food-option {
+    margin-left: 5px; /* Reduce spacing for small screens */
+    font-size: 12px;
+  }
+
+  .food-header-price,
+  .food-price {
+    margin-left: 15px; /* Indent price for small screens */
+    font-size: 12px;
+    margin-top: 3px;
   }
 }

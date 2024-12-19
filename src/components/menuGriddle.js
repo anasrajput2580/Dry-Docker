@@ -20,15 +20,15 @@ const Menu = () => {
       </div>
       <div className="food-option">
         <span>With Beef Bacon</span>
-        <span className="food-price">$6.60</span>
+        <span className="food-price">$6.75</span>
       </div>
       <div className="food-option">
         <span>With NY Corned Beef or Pastrami</span>
-        <span className="food-price">$8.90</span>
+        <span className="food-price">$8.75</span>
       </div>
       <div className="food-option">
         <span>With Taylor Ham-like</span>
-        <span className="food-price">$6.00</span>
+        <span className="food-price">$6.50</span>
       </div>
       <div className="food-option">
         <span>With Flat-Iron steak</span>
@@ -64,7 +64,7 @@ const Menu = () => {
       </div>
       <div className="food-option">
         <span>With home fries and choice of toast </span>
-        <span className="food-price">$8.50</span>
+        <span className="food-price">$8.25</span>
       </div>
 
      {/*Food Header*/}
