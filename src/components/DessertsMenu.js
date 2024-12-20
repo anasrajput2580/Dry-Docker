@@ -245,7 +245,7 @@ const DessertsMenu = () => {
       </div>
       <div className="food-option">
         <span>10 OZ</span>
-        <span className="food-price">$3.00</span>
+        <span className="food-price">$2.00</span>
       </div>
        {/*header */}
        <div className="food-header">

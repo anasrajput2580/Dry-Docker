@@ -57,7 +57,7 @@ const OnTheSideMenu = () => {
       {/*Food Header*/}
       <div className="food-header">
       Macaroni Salad                 
-        <span className="food-price">$4.00</span>
+        <span className="food-price">$5.00</span>
       </div>
       <div className="food-option">
         <span></span>      

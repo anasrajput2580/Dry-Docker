@@ -250,10 +250,11 @@ button:hover {
   .image-2,
   .image-3,
   .image-4 {
-    top: auto;
+    /* top: auto;
     left: 0;
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 10px; */
+    display: none;
   }
 
   .image-item img {

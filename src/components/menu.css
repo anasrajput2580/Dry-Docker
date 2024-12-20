@@ -87,6 +87,7 @@
   color: #000;
   margin-right: 300px;
   font-size: 14px;
+  font-style: normal;
 }
 
 .card-list li {
@@ -104,6 +105,22 @@
   font-size: 40px;
 }
 
+
+@media (min-width: 1200px) {
+
+
+  .food-header,
+  .food-option {
+    max-width: 800px; /* Adjust layout width for better alignment */
+    margin: 40 auto; /* Center-align the elements */
+  }
+
+  .food-header-price,
+  .food-price {
+    font-size: 14px;
+    text-align: right; /* Align price to the right */
+  }
+}
 /* Responsive Design */
 
 /* Tablet devices (1024px and below) */
@@ -154,17 +171,7 @@
     font-size: 16px;
   }
 
-  .food-header,
-  .food-option {
-    flex-direction: column; /* Stack items vertically */
-    margin-left: 20px; /* Adjust margin */
-    font-size: 14px;
-  }
-
-  .food-header-price,
-  .food-price {
-    margin-right: 20px; /* Adjust right margin */
-  }
+ 
 
   .catering-sub-header {
     font-size: 12px; /* Adjust sub-header font size */
@@ -174,17 +181,18 @@
   }
   .food-header,
   .food-option {
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the left */
-    margin-left: 10px; /* Adjust left margin */
-    font-size: 14px; /* Ensure readability */
+    margin-left: 0px;
+    display:flexbox;
+    font-size: 12px;
   }
+
   .food-header-price,
   .food-price {
-    margin-left: 20px; /* Indent price for readability */
-    margin-top: 5px; /* Add spacing between lines */
-    font-size: 14px;
-    font-weight: bold; /* Highlight prices */
+    font-size: 11px;
+    font-style: normal;
+    font-weight: lighter;
+    align-content: right;
+    /* margin-left: 300px; */
   }
 }
 
@@ -194,12 +202,19 @@
     width: 95%; /* Full width */
   }
 
-  .menu-header,
   .menu-section-header {
-    font-size: 14px;
-
+    font-size: 12px;
+    border: #2f4f4f 2px;
+    border-radius: 0cqmax;
+    border: 4px solid #2f4f4f;
+    border-radius: 25px;
+    width: 100%;
+    margin-left: -5px;
   }
-
+  .menu-header {
+    font-size: 12px;
+    margin-top: 30px;
+  }
   .bev-header,
   .catering-header {
     font-size: 14px;
@@ -207,32 +222,23 @@
 
   .food-header,
   .food-option {
-    margin-left: 10px;
-    font-size: 12px;
+    margin-left: 0px;
+    display:flexbox;
+    font-size: 11px;
   }
 
   .food-header-price,
   .food-price {
-    margin-right: -300px;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: lighter;
   }
 
   .card-list li::before {
-    font-size: 20px; /* Smaller checkmark */
+    font-size: 15px; /* Smaller checkmark */
   }
 
   .menu-container {
     padding: 10px; /* Reduce padding */
-  }
-  .food-header,
-  .food-option {
-    margin-left: 5px; /* Reduce spacing for small screens */
-    font-size: 12px;
-  }
-
-  .food-header-price,
-  .food-price {
-    margin-left: 15px; /* Indent price for small screens */
-    font-size: 12px;
-    margin-top: 3px;
   }
 }

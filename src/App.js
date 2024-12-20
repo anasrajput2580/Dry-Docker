@@ -56,7 +56,7 @@ function HomePage() {
       <HotSandwichesMenu/>
       <ColdDeliMenu/>
       <SpecialComboMenu/>
-      <SpecialityWrapsMenu/>S
+      <SpecialityWrapsMenu/>
       <OnTheSideMenu/>
       <DessertsMenu/>
      

@@ -36,7 +36,7 @@ const BagelMenu = () => {
       </div>
       <div className="food-option">
         <span>With Nova lox, cream cheese, sliced tomato, red onion & capers    </span>
-        <span className="food-price">$11.50</span>
+        <span className="food-price">$11.00</span>
       </div>
       {/*Food Header*/}
       <div className="food-header">

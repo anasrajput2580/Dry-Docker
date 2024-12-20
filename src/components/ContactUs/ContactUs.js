@@ -30,7 +30,7 @@ const ContactUs = () => {
       </nav>
       <div className="header">
         <img
-          src="./Website_Logo/Dry_Dock_Logo_White.png" // Replace with the actual path to your logo
+          src="./Website_Logo/DryDockMenu.png" // Replace with the actual path to your logo
           alt="Dry Dock Bistro Logo"
           className="logo"
         />
