@@ -10,7 +10,7 @@ const CTASection = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 10px; /* Add gap between content and button */
-  margin-top: -30px;
+
 
   @media (max-width: 768px) {
     flex-direction: column; /* Stack items vertically on smaller screens */
@@ -27,8 +27,8 @@ const CTASection = styled.div`
   @media (min-width: 1200px) {
     /* Increased padding for larger screens */
     gap: -20px; /* Increased gap for better spacing */
-    padding-left: 300px;
-    padding-right:450px;
+    padding-left: 220px;
+    padding-right:350px;
     
   }
 `;
@@ -41,6 +41,9 @@ const CTAText = styled.div`
     font-size: 24px; /* Larger font for headings */
     font-weight: bold;
     margin-bottom: 10px;
+      margin-top: -15px;
+
+    
 
     @media (max-width: 768px) {
       font-size: 16px; /* Adjusted for tablets */
@@ -60,7 +63,8 @@ const CTAText = styled.div`
     font-size: 14px;
     line-height: 1.5;
     margin: 0;
-
+    margin-bottom: -10px; 
+   
     @media (max-width: 768px) {
       font-size: 12px; /* Slightly smaller on tablets */
     }
@@ -78,14 +82,16 @@ const CTAText = styled.div`
 const CTAButton = styled.a`
   background-color: #ffffff; /* White button background */
   color: #274340; /* Dark green text */
-  padding: 10px 20px; /* Adjusted padding for larger screens */
+  padding: 12px 20px; /* Adjusted padding for larger screens */
   border-radius: 8px;
   font-family: "Inria Serif", serif;
-  font-size: 13px; /* Slightly larger font */
+  font-size: 8px; /* Slightly larger font */
   font-weight: bold;
   text-decoration: none;
   transition: background-color 0.3s;
   align-self: center; /* Ensure proper alignment */
+  text-align: center;
+  width: 35%;
 
   &:hover {
     background-color: #f8cf40; /* Hover color (gold) */

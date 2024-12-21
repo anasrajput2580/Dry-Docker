@@ -118,23 +118,32 @@
   .hours-container {
     padding: 10px;
     gap: 10px;
+    align-content: center;
   }
 
   .map-iframe {
     height: 150px;
+    align-content: center;
+    width: 122%;
   }
 
   .hours-section h2 {
     font-size: 1.1rem;
+    text-align: center;
   }
 
   .hours-section ul {
     margin-left: 10px;
+    padding-left: 90px;
   }
 
-  .hours-section li,
+  .hours-section li {
+    font-size: 0.85rem;
+    
+  }
   .hours-section p {
     font-size: 0.85rem;
+    text-align: center;
   }
 
   .contact-number {

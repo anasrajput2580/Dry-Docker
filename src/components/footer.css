@@ -144,7 +144,7 @@
 
 /* Mobile devices (768px and below) */
 @media (max-width: 768px) {
-  /* .footer-content {
+  .footer-content {
     grid-template-columns: 1fr;
     gap: 10px;
     text-align: center;
@@ -173,26 +173,8 @@
     flex-direction: row;
     justify-content: center;
     gap: 10px;
-  } */
-  .footer-content {
-    display:inline;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns for desktop */
-    gap: 20px;
-    align-items: start;
   }
-  .footer-note {
-    grid-column: span 3;
-    font-size: 12px;
-    color: #666666;
-    display: inline;
-  }
-  .footer-note p {
-    margin-top: 0;
-  }
-
-  .footer-contact-map {
-    display: inline;
-  }
+  
 }
 
 /* Small Mobile devices (480px and below) */
@@ -201,7 +183,7 @@
     display:inline;
     grid-template-columns: repeat(4, 1fr); /* 4 columns for desktop */
     gap: 20px;
-    align-items: start;
+    align-items: center;
   }
   .footer-note {
     grid-column: span 3;
