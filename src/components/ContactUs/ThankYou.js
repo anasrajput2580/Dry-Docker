@@ -27,7 +27,7 @@ const ThankYou = ({ title, line1, line2, line3 }) => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/catering" activeClassName="active-link">
+                  <NavLink to="/caterings" activeClassName="active-link">
                     Catering
                   </NavLink>
                 </li>

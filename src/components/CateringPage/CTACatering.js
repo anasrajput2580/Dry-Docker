@@ -1,6 +1,8 @@
-import React from "react"; 
+import React from "react";
 import styled from "styled-components";
-const CTASection = styled.div`
+// Styled components for the design
+// Styled components for the design
+const CTACSection = styled.div`
   background-color: #274340; /* Dark green background */
   color: #ffffff; /* White text color */
   padding: 20px 10px;
@@ -31,7 +33,7 @@ const CTASection = styled.div`
   }
 `;
 
-const CTAText = styled.div`
+const CTACText = styled.div`
   max-width: 800px; /* Increased max-width for larger screens */
   font-family: "Inria Serif", serif;
 
@@ -50,7 +52,7 @@ const CTAText = styled.div`
 
     @media (max-width: 480px) {
       font-size: 14px; /* Smaller font for mobile */
-      padding-top:10px;
+       padding-top:10px;
     }
 
     @media (min-width: 1200px) {
@@ -78,7 +80,7 @@ const CTAText = styled.div`
   }
 `;
 
-const CTAButton = styled.a`
+const CTACButton = styled.a`
   background-color: #ffffff; /* White button background */
   color: #274340; /* Dark green text */
   padding: 12px 20px; /* Adjusted padding for larger screens */
@@ -105,7 +107,6 @@ const CTAButton = styled.a`
   @media (max-width: 480px) {
     font-size: 12px; /* Slightly smaller font */
     padding: 6px 10px; /* Compact button size for mobile */
-    
   }
 
   @media (min-width: 1200px) {
@@ -114,19 +115,18 @@ const CTAButton = styled.a`
   }
 `;
 
-const CTA = () => {
+const CTACatering = () => {
   return (
-    <CTASection>
-      <CTAText>
-        <h2>Bring the Bistro to Your Next Event</h2>
+    <CTACSection>
+      <CTACText>
+        <h2>Want to make your event unforgettable?</h2>
         <p>
-          From intimate gatherings to corporate events, our catering menu is made to
-          delight with fresh flavors and customizable options.
+        Get in touch with us today to place your catering order!
         </p>
-      </CTAText>
-      <CTAButton href="/caterings">View Our Catering</CTAButton>
-    </CTASection>
+      </CTACText>
+      <CTACButton href="/contact-us">Contact Us for Catering</CTACButton>
+    </CTACSection>
   );
 };
 
-export default CTA;
+export default CTACatering;

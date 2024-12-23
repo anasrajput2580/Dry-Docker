@@ -17,19 +17,19 @@ import OnTheSideMenu from './components/OnTheSideMenu';
 import DessertsMenu from './components/DessertsMenu';
 import CTA from './components/CTA';
 import Footer from './components/footer';
-import ContinentalBreakfastCatering from './components/Catering/ContinentalBreakfastCatering';
+import ContinentalBreakfastCatering from './components/CateringPage/ContinentalBreakfastCatering';
 import ScrollToTop from './components/scrollToTop';
-import HotBreakfastCatering from './components/Catering/HotBreakfastCatering';
-import SmokedFishCatering from './components/Catering/SmokedFishCatering';
-import HotColdHorsCatering from './components/Catering/HotColdHorsCatering';
-import AppetizerCatering from './components/Catering/AppetizerCatering';
-import SaladsCatering from './components/Catering/SaladsCatering';
-import ColdToSmokeyCatering from './components/Catering/ColdToSmokeyCatering';
-import ColdAndHotCatering from './components/Catering/ColdAndHoldCatering';
-import PaniniCatering from './components/Catering/PaniniCatering';
-import PastaCatering from './components/Catering/PastaCatering';
-import HotEntreeCatering from './components/Catering/HotEntreeCatering';
-import CTACatering from './components/Catering/CTACatering';
+import HotBreakfastCatering from './components/CateringPage/HotBreakfastCatering';
+import SmokedFishCatering from './components/CateringPage/SmokedFishCatering';
+import HotColdHorsCatering from './components/CateringPage/HotColdHorsCatering';
+import AppetizerCatering from './components/CateringPage/AppetizerCatering';
+import SaladsCatering from './components/CateringPage/SaladsCatering';
+import ColdToSmokeyCatering from './components/CateringPage/ColdToSmokeyCatering';
+import ColdAndHotCatering from './components/CateringPage/ColdAndHoldCatering';
+import PaniniCatering from './components/CateringPage/PaniniCatering';
+import PastaCatering from './components/CateringPage/PastaCatering';
+import HotEntreeCatering from './components/CateringPage/HotEntreeCatering';
+import CTACatering from './components/CateringPage/CTACatering';
 
 
 import AboutSection from './components/AboutPage/AboutSection';
@@ -59,8 +59,6 @@ function HomePage() {
       <SpecialityWrapsMenu/>
       <OnTheSideMenu/>
       <DessertsMenu/>
-     
-
       <CTA/>
       <Footer/>
       <ScrollToTop />
@@ -132,7 +130,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/catering" element={<CateringPage />} />
+        <Route path="/caterings" element={<CateringPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact-us" element={<ContactUsPage />} />
         <Route path="/thank-you" element={<ThankYouPage />} />

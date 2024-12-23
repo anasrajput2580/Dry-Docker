@@ -29,7 +29,7 @@ const Banner = ({ videoSrc, title, subtitle }) => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/catering" activeClassName="active-link">
+            <NavLink to="/caterings" activeClassName="active-link">
               Catering
             </NavLink>
           </li>
