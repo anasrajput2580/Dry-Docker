@@ -8,6 +8,7 @@
   padding: 20px 40px;
   border-radius: 8px;
   gap: 20px; /* Adds spacing between map and hours */
+  flex-wrap: wrap; /* Ensures wrapping on smaller screens */
 }
 
 /* Map Section */
@@ -68,7 +69,7 @@
 @media screen and (max-width: 1024px) {
   .hours-container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 20px;
     gap: 20px;
   }
@@ -78,7 +79,7 @@
   }
 
   .map-iframe {
-    height: 200px;
+    height: 220px; /* Adjusted for smaller tablets */
   }
 
   .hours-section {
@@ -121,10 +122,13 @@
     align-content: center;
   }
 
+  .map-section {
+    max-width: 100%;
+  }
+
   .map-iframe {
     height: 150px;
-    align-content: center;
-    width: 122%;
+    width: 100%; /* Adjusted for small screens */
   }
 
   .hours-section h2 {
@@ -134,13 +138,12 @@
 
   .hours-section ul {
     margin-left: 10px;
-    padding-left: 90px;
   }
 
   .hours-section li {
     font-size: 0.85rem;
-    
   }
+
   .hours-section p {
     font-size: 0.85rem;
     text-align: center;

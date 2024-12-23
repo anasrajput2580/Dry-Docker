@@ -166,7 +166,8 @@
 /* Mobile devices (768px and below) */
 @media (max-width: 768px) {
   .menu-line {
-    width: 90%; /* Adjust line width */
+    width: 100%; /* Full width */
+    margin-left: 0;
   }
 
   .menu-header,

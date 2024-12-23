@@ -146,25 +146,16 @@ button:hover {
     width: 100%;
     max-width: 300px;
   }
-
-  .image-item img {
-    width: 100%;
-  }
-
-  .image-2 {
-    top: 120px;
-    left: 30px;
-  }
-
-  .image-3 {
-    top: 240px;
-    left: 30px;
-  }
-
+  .image-1,
+  .image-2,
+  .image-3,
   .image-4 {
-    top: 180px;
+    /* top: auto;
     left: 0;
-  }
+    position: relative;
+    margin-bottom: 10px; */
+    display: none;
+}
 }
 
 /* Mobile Devices */
@@ -203,24 +194,15 @@ button:hover {
   .images-section {
     max-width: 250px;
   }
-
-  .image-1 {
-    top: 0;
-  }
-
-  .image-2 {
-    top: 90px;
-    left: 20px;
-  }
-
-  .image-3 {
-    top: 180px;
-    left: 20px;
-  }
-
+  .image-1,
+  .image-2,
+  .image-3,
   .image-4 {
-    top: 130px;
+    /* top: auto;
     left: 0;
+    position: relative;
+    margin-bottom: 10px; */
+    display: none;
   }
 }
 
