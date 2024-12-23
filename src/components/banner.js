@@ -48,7 +48,7 @@ const Banner = ({ videoSrc, title, subtitle }) => {
       <div className="header">
         <img
           src="./Website_Logo/DryDockMenu.png" // Replace with the actual path to your logo
-          alt="Dry Dock Bistro Logo"
+          alt="Dry Dock Bistro Logo Error"
           className="logo"
         />
       </div>

@@ -51,6 +51,7 @@ const CTAText = styled.div`
 
     @media (max-width: 480px) {
       font-size: 14px; /* Smaller font for mobile */
+      padding-top:10px;
     }
 
     @media (min-width: 1200px) {
@@ -105,6 +106,7 @@ const CTAButton = styled.a`
   @media (max-width: 480px) {
     font-size: 12px; /* Slightly smaller font */
     padding: 6px 10px; /* Compact button size for mobile */
+    
   }
 
   @media (min-width: 1200px) {

@@ -25,7 +25,7 @@ const AboutSection = () => {
       {/* Bottom Section */}
       <div className="bottom-section">
         <div className="image-container">
-          <img src="./About_Us/7..png" alt="Chef" />
+          <img src="./About_Us/7.png" alt="Chef" />
         </div>
         <div className="text-container">
           <h2>Our Passion for Quality in Every Meal</h2>

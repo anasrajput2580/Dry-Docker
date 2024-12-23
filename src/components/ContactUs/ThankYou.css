@@ -1,8 +1,10 @@
 /* General Styles */
 .banner-ty {
-    background-position: center;
-    color: #000;
+    background-color:#ffffff;
+    text-align: center;
+    padding: 1.4vw; /* Responsive padding */
     position: relative;
+    margin-top: -20px;
 }
 .navbar-ty {
     display: flex;
@@ -27,7 +29,7 @@
     height: 70px; /* Adjust height to fit your desired logo size */
     object-fit: contain; /* Ensures the logo does not get cropped */
     margin-left: 10px; /* Adjust left margin for positioning */
-    margin-top: -10px; /* Adjust top margin for spacing */
+    /* Adjust top margin for spacing */
   }
   
   .menu-ty {
@@ -269,6 +271,7 @@
 @media (max-width: 480px) {
     .logo-img-ty {
         width: 150px;
+        margin-top: 20px;
     }
     .thank-you-page h1 {
         font-size: 24px;

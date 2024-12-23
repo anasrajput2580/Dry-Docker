@@ -58,12 +58,13 @@
   font-size: 16px;
   display: flex;
   justify-content: space-between;
-  margin-top: 15px;
+  margin-top: 20px;
   color: #000;
   margin-left: 300px;
   font-size: 13px;
   font-weight: bold;
   text-transform: uppercase;
+  padding-top: 10px;
 }
 .food-header span {
   font-weight: lighter;
@@ -72,6 +73,7 @@
   color: #000;
   font-size: 13px;
   margin-right: 300px;
+  
 }
 
 .food-option {
@@ -82,6 +84,8 @@
   margin-left: 300px;
   font-size: 14px;
   font-style: italic;
+ 
+  padding-bottom: 10px;
 }
 
 .food-price {
@@ -203,7 +207,8 @@
 /* Small mobile devices (480px and below) */
 @media (max-width: 480px) {
   .menu-line {
-    width: 95%; /* Full width */
+    width: 100%; /* Full width */
+    margin-left: 0;
   }
 
   .menu-section-header {

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 // Styled components for the design
 // Styled components for the design
-const CTASection = styled.div`
+const CTAAboutSection = styled.div`
   background-color: #274340; /* Dark green background */
   color: #ffffff; /* White text color */
   padding: 20px 10px;
@@ -43,8 +43,6 @@ const CTAText = styled.div`
     margin-bottom: 10px;
       margin-top: -15px;
 
-    
-
     @media (max-width: 768px) {
       font-size: 16px; /* Adjusted for tablets */
       margin-left: 0; /* Center align text */
@@ -52,6 +50,7 @@ const CTAText = styled.div`
 
     @media (max-width: 480px) {
       font-size: 14px; /* Smaller font for mobile */
+       padding-top:10px;
     }
 
     @media (min-width: 1200px) {
@@ -116,7 +115,7 @@ const CTAButton = styled.a`
 
 const CTAAbout = () => {
   return (
-    <CTASection>
+    <CTAAboutSection>
       <CTAText>
         <h2>Craving something delicious?</h2>
         <p>
@@ -126,7 +125,7 @@ const CTAAbout = () => {
         <p> </p>
       </CTAText>
       <CTAButton href="/contact-us">Contact Us Today</CTAButton>
-    </CTASection>
+    </CTAAboutSection>
   );
 };
 

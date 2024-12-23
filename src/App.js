@@ -72,7 +72,7 @@ function CateringPage() {
     <>
       <Banner
       title="The Perfect Menu for Your Event"
-      videoSrc="/CateringPage/Catering.mp4" 
+      videoSrc="/CateringPage/CateringVid.mp4" 
        />
         <ContinentalBreakfastCatering/>
         <HotBreakfastCatering/>
@@ -109,8 +109,7 @@ function AboutPage() {
 function ContactUsPage() {
   return (
     <>
-      <ContactUs
-       />
+      <ContactUs/>
        <ContactForm/>
         <HoursOfOperation/>
         <ScrollToTop />           

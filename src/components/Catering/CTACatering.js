@@ -52,6 +52,7 @@ const CTAText = styled.div`
 
     @media (max-width: 480px) {
       font-size: 14px; /* Smaller font for mobile */
+       padding-top:10px;
     }
 
     @media (min-width: 1200px) {

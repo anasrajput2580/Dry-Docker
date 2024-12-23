@@ -7,24 +7,42 @@ import {
   } from "react-icons/fa";
 const ThankYou = ({ title, line1, line2, line3 }) => {
   // Define breakpoints
-  const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
+  // Media Queries
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
+  const isMobile = useMediaQuery({ maxWidth: 767 });
 
   return (
     <div className="banner-ty">
       {/* Menu Section */}
-      <nav className="navbar-ty">
-        <div className="logo-ty">
+      <nav className={`navbar-ty ${isMobile ? "navbar-mobile" : ""}`}>
+               <div className="logo-ty">
           <a href="/" className="home-button-ty">
             <img src="/Website_Logo/Dry_Dock_Logo_Black.png" alt="Logo" className="logo-img-ty" />
           </a>
         </div>
-        <ul className={`menu-ty ${isMobile ? 'menu-ty-mobile' : ''}`}>
-          <li><NavLink to="/" activeClassName="active-link">Home</NavLink></li>
-          <li><NavLink to="/catering" activeClassName="active-link">Catering</NavLink></li>
-          <li><NavLink to="/about" activeClassName="active-link">About Us</NavLink></li>
-          <li><NavLink to="/contact-us" activeClassName="active-link">Contact Us</NavLink></li>
-        </ul>
-      </nav>
+              <ul className={`menu ${isMobile ? "menu-mobile" : isTablet ? "menu-tablet" : ""}`}>
+                <li>
+                  <NavLink to="/" activeClassName="active-link">
+                    Home
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/catering" activeClassName="active-link">
+                    Catering
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/about" activeClassName="active-link">
+                    About Us
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/contact-us" activeClassName="active-link">
+                    Contact Us
+                  </NavLink>
+                </li>
+              </ul>
+            </nav>
       {/* Thank You Section */}
       <div className="thank-you-page">
 
