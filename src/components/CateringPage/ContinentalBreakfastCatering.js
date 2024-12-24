@@ -44,10 +44,7 @@ Perfect for any event, big or small, our dishes are made fresh, full of flavor, 
       Health Baked Oatmeal Breakfast Cups
       </div>
       <div className="food-option">
-        <span>Choice of 2 lemon poppy, orange cranberry,  Blueberry almond, apple cinnamon, sweet potato </span>      
-      </div>
-      <div className="food-option">
-        <span>Carrot or banana bread. </span>      
+        <span>Choice of 2 lemon poppy, orange cranberry,  Blueberry almond, apple cinnamon, sweet potato, carrot or banana bread. </span>      
       </div>
       {/*Food Header*/}
       <div className="food-header">

@@ -74,6 +74,9 @@ const HotSandwichesMenu = () => {
          <span className="food-header-price">$6.00</span>
       </div>
       <div className="food-option">
+
+      </div>
+      <div className="food-option">
         <span>With tomato </span>
         <span className="food-price">$6.35</span>
       </div>

@@ -17,7 +17,7 @@ const ContactUs = () => {
           </li>
           <li>
 
-            <NavLink to="/catering" activeClassName="active-link">Catering</NavLink>
+            <NavLink to="/caterings" activeClassName="active-link">Catering</NavLink>
           </li>
           <li>
           <NavLink to="/about" activeClassName="active-link">About Us</NavLink>

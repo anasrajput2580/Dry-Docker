@@ -19,7 +19,7 @@ const BagelMenu = () => {
       Bagel
       </div>
       <div className="food-option">
-        <span>with spinach, onion, olives & feta  </span>
+        <span>With spinach, onion, olives & feta  </span>
         <span className="food-price">$3.50</span>
       </div>
       <div className="food-option">

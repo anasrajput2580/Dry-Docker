@@ -234,16 +234,17 @@
   .food-option {
     margin-left: 0px;
     display:flexbox;
-    font-size: 11px;
-    margin-left: 70px;
+    font-size: 9px;
+    margin-left: 10px;
+
   }
 
   .food-header-price,
   .food-price {
-    font-size: 10px;
+    font-size: 9px;
     font-style: normal;
     font-weight: lighter;
-   
+    margin-right: 0;
   }
 
   .card-list li::before {

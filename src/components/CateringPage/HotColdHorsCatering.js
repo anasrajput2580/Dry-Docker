@@ -12,7 +12,7 @@ const HotColdHorsCatering = () => {
       <hr className="menu-line" />
       <div className="food-header">
       U-15 Jumbo Shrimp Cocktail or Coconut Battered
-      <span className="food-header-price">$2.25 Each</span>
+      <span className="food-header-pric">$2.25 Each</span>
       </div>
       {/*Food Options*/}
       <div className="food-option">

@@ -50,18 +50,16 @@ const Footer = () => {
     </p>
   </div>
 
-
-          
           <div className="vertical-divider"></div>
-
           <div className="footer-map">
             <iframe
                 title="Dry Dock Bistro Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.1234567890!2d-74.123456789!3d40.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c254c123456789%3A0x123456789abcdef!2s78%20John%20Miller%20Way%2C%20Kearny%2C%20NJ%2007032!5e0!3m2!1sen!2sus!4v1691234567890!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.1234567890!2d-74.123456789!3d40.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c254c123456789%3A0x123456789abcdef!2s78%20John%20Miller%20Way%2C%20Kearny%2C%20NJ%2007032!5e0!3m2!1sen!2sus!4v1691234567890!5m2!1sen!2sus&disable=feature:poi|feature:transit"
                 width="300"
                 height="200"
                 allowFullScreen=""
                 loading="lazy"
+                style={{ border: 0 }}
             ></iframe>
              <div className="footer-social">
       <a

@@ -28,7 +28,7 @@ const EggsOmeletsMenu = () => {
         Greek Omelet
       </div>
       <div className="food-option">
-        <span>with spinach, onion, olives & feta  </span>
+        <span>With spinach, onion, olives & feta  </span>
         <span className="food-price">$9.75</span>
       </div>
           {/*Food Header*/}

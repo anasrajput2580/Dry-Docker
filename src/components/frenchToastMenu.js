@@ -13,7 +13,7 @@ const frenchToastMenu = () => {
       </div>
       {/*Food Options*/}
       <div className="food-option">
-      <span>with butter & maple syrup</span>
+      <span>With butter & maple syrup</span>
       </div>
       {/*Food Header*/}
       <div className="food-header">
@@ -21,7 +21,7 @@ const frenchToastMenu = () => {
         <span className="food-price">$7.75</span>
       </div>
       <div className="food-option">
-        <span>with butter & maple syrup</span>      
+        <span>With butter & maple syrup</span>      
       </div>
       {/*Food Header*/}
       <div className="food-header">
@@ -37,11 +37,11 @@ const frenchToastMenu = () => {
       Belgium WafflE 
       </div>
       <div className="food-option">
-        <span>with butter & maple syrup</span>    
+        <span>With butter & maple syrup</span>    
         <span className="food-price">$7.75</span>  
       </div>
       <div className="food-option">
-        <span>with fresh strawberry & whipped cream</span>    
+        <span>With fresh strawberry & whipped cream</span>    
         <span className="food-price">$9.00</span>  
       </div>
     </div>
