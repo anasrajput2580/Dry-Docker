@@ -3,18 +3,19 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Banner from './components/banner'; // Make sure this path is correct
-import Menu from './components/menuGriddle';
-import EggsOmeletsMenu from './components/EggsOmeletsMenu';
-import FrenchToastMenu from './components/frenchToastMenu';
-import BagelMenu from './components/BagelMenu';
-import AppetizersMenu from './components/AppetizersMenu';
-import SoupSaladMenu from './components/SoupSaladMenu';
-import HotSandwichesMenu from './components/HotSandwichesMenu';
-import ColdDeliMenu from './components/ColdDeliMenu';
-import SpecialComboMenu from './components/SpecialComboMenu';
-import SpecialityWrapsMenu from './components/SpecialityWrapsMenu';
-import OnTheSideMenu from './components/OnTheSideMenu';
-import DessertsMenu from './components/DessertsMenu';
+// import Menu from './components/menuGriddle';
+// import EggsOmeletsMenu from './components/EggsOmeletsMenu';
+// import FrenchToastMenu from './components/frenchToastMenu';
+// import BagelMenu from './components/BagelMenu';
+// import AppetizersMenu from './components/AppetizersMenu';
+// import SoupSaladMenu from './components/SoupSaladMenu';
+// import HotSandwichesMenu from './components/HotSandwichesMenu';
+// import ColdDeliMenu from './components/ColdDeliMenu';
+// import SpecialComboMenu from './components/SpecialComboMenu';
+// import SpecialityWrapsMenu from './components/SpecialityWrapsMenu';
+// import OnTheSideMenu from './components/OnTheSideMenu';
+// import DessertsMenu from './components/DessertsMenu';
+import ImageColumn from './components/ImagesColumn';
 import CTA from './components/CTA';
 import Footer from './components/footer';
 import ContinentalBreakfastCatering from './components/CateringPage/ContinentalBreakfastCatering';
@@ -47,8 +48,9 @@ function HomePage() {
       title="THE HOME OF NEW YORK CORNED BEEF AND PASTRAMI"
       videoSrc="/Home/Video_in_Light_Yellow_Maroon_White_Simple_and_Minimal_Simple_and_Minimal_Style.mp4" 
        />
-      <Menu />
-      <EggsOmeletsMenu />
+      {/* <Menu /> */}
+      <ImageColumn/>
+      {/* <EggsOmeletsMenu />
       <FrenchToastMenu />
       <BagelMenu/>
       <AppetizersMenu/>
@@ -58,7 +60,7 @@ function HomePage() {
       <SpecialComboMenu/>
       <SpecialityWrapsMenu/>
       <OnTheSideMenu/>
-      <DessertsMenu/>
+      <DessertsMenu/> */}
       <CTA/>
       <Footer/>
       <ScrollToTop />
