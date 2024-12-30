@@ -8,7 +8,6 @@ import {
   FaInstagram,
   FaMap
 } from "react-icons/fa";
-// import { GrMail } from "react-icons/gr";
 
 const Footer = () => {
   return (

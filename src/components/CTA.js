@@ -118,13 +118,12 @@ const CTA = () => {
   return (
     <CTASection>
       <CTAText>
-        <h2>Bring the Bistro to Your Next Event</h2>
+        <h2>Delicious Sides to Complete Your Meal</h2>
         <p>
-          From intimate gatherings to corporate events, our catering menu is made to
-          delight with fresh flavors and customizable options.
+        The perfect additions to complete your plate.
         </p>
       </CTAText>
-      <CTAButton href="/caterings">View Our Catering</CTAButton>
+      <CTAButton href="/side-menu">View Our Side Menu</CTAButton>
     </CTASection>
   );
 };

@@ -1,0 +1,96 @@
+/* General container styling */
+.catering-column-container {
+    display: flex;
+    flex-direction: column; /* Default to column layout */
+    align-items: flex-start;
+    gap: 1px; /* Space between images */
+    padding: 10px;
+    background-color: #2f4f4f;
+  }
+  
+  .menu-section-header {
+    background-color: #2f4f4f;
+    color: #fff;
+    padding: 2px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+  }
+  
+  .catering-wrapper1,
+  .catering-wrapper2,
+  .catering-wrapper3 {
+    width: 100%;
+    max-width: 900px; /* Set a max width for images */
+    border-color: black;
+  }
+  
+  .image-wrapper1:hover,
+  .image-wrapper2:hover {
+  
+    z-index: 5;
+  }
+  
+  .responsive-image {
+    width: 100%; /* Make images responsive */
+    cursor: pointer; /* Pointer cursor for clickable images */
+  }
+  
+  /* Modal styles */
+  .image-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-image {
+    max-width: 100%; /* Ensure it fits the screen */
+    max-height: 90%; /* Maintain aspect ratio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Add a shadow */
+    border-radius: 10px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1100;
+  }
+  
+  /* Responsive design for larger screens */
+  @media (min-width: 768px) {
+    .image-column-container {
+      flex-direction: row; /* Change to row layout for tablets and above */
+      justify-content: center;
+    }
+  }
+  
+  /* Extra-large screens */
+  @media (min-width: 1200px) {
+    .image-column-container {
+      gap: 20px; /* Increase spacing on larger screens */
+    }
+  }
+  
+  /* Small mobile devices (480px and below) */
+  @media (max-width: 480px) {
+    .menu-section-header {
+      font-size: 12px;
+      border-radius: 25px;
+      width: 99%;
+    }
+  }
+  

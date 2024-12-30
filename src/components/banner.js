@@ -25,7 +25,12 @@ const Banner = ({ videoSrc, title, subtitle }) => {
         <ul className={`menu ${isMobile ? "menu-mobile" : isTablet ? "menu-tablet" : ""}`}>
           <li>
             <NavLink to="/" activeClassName="active-link">
-              Home
+              Menu
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/side-menu" activeClassName="active-link">
+              Side Menu
             </NavLink>
           </li>
           <li>

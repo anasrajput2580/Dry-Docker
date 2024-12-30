@@ -13,7 +13,10 @@ const ContactUs = () => {
       <nav className={`navbar ${isMobile ? 'navbar-mobile' : ''}`}>
         <ul className={`menu ${isMobile ? 'menu-mobile' : isTablet ? 'menu-tablet' : ''}`}>
           <li>
-          <NavLink to="/" activeClassName="active-link">Home</NavLink>
+          <NavLink to="/" activeClassName="active-link">Menu</NavLink>
+          </li>
+          <li>
+          <NavLink to="/side-menu" activeClassName="active-link">Side Menu</NavLink>
           </li>
           <li>
 

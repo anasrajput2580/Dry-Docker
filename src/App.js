@@ -3,6 +3,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Banner from './components/banner'; // Make sure this path is correct
+import Header from './components/header';
+import List from './components/List';
+import SideMenu from './components/SideMenuPage/SideMenu';
+import SideCTA from './components/SideMenuPage/SideCTA';
 // import Menu from './components/menuGriddle';
 // import EggsOmeletsMenu from './components/EggsOmeletsMenu';
 // import FrenchToastMenu from './components/frenchToastMenu';
@@ -15,21 +19,23 @@ import Banner from './components/banner'; // Make sure this path is correct
 // import SpecialityWrapsMenu from './components/SpecialityWrapsMenu';
 // import OnTheSideMenu from './components/OnTheSideMenu';
 // import DessertsMenu from './components/DessertsMenu';
-import ImageColumn from './components/ImagesColumn';
+import MenuImageColumn from './components/MenuImagesColumn';
 import CTA from './components/CTA';
 import Footer from './components/footer';
-import ContinentalBreakfastCatering from './components/CateringPage/ContinentalBreakfastCatering';
+
 import ScrollToTop from './components/scrollToTop';
-import HotBreakfastCatering from './components/CateringPage/HotBreakfastCatering';
-import SmokedFishCatering from './components/CateringPage/SmokedFishCatering';
-import HotColdHorsCatering from './components/CateringPage/HotColdHorsCatering';
-import AppetizerCatering from './components/CateringPage/AppetizerCatering';
-import SaladsCatering from './components/CateringPage/SaladsCatering';
-import ColdToSmokeyCatering from './components/CateringPage/ColdToSmokeyCatering';
-import ColdAndHotCatering from './components/CateringPage/ColdAndHoldCatering';
-import PaniniCatering from './components/CateringPage/PaniniCatering';
-import PastaCatering from './components/CateringPage/PastaCatering';
-import HotEntreeCatering from './components/CateringPage/HotEntreeCatering';
+// import ContinentalBreakfastCatering from './components/CateringPage/ContinentalBreakfastCatering';
+// import HotBreakfastCatering from './components/CateringPage/HotBreakfastCatering';
+// import SmokedFishCatering from './components/CateringPage/SmokedFishCatering';
+// import HotColdHorsCatering from './components/CateringPage/HotColdHorsCatering';
+// import AppetizerCatering from './components/CateringPage/AppetizerCatering';
+// import SaladsCatering from './components/CateringPage/SaladsCatering';
+// import ColdToSmokeyCatering from './components/CateringPage/ColdToSmokeyCatering';
+// import ColdAndHotCatering from './components/CateringPage/ColdAndHoldCatering';
+// import PaniniCatering from './components/CateringPage/PaniniCatering';
+// import PastaCatering from './components/CateringPage/PastaCatering';
+// import HotEntreeCatering from './components/CateringPage/HotEntreeCatering';
+import CateringMenu1 from './components/CateringPage/CateringMenu';
 import CTACatering from './components/CateringPage/CTACatering';
 
 
@@ -45,11 +51,14 @@ function HomePage() {
   return (
     <>
       <Banner
-      title="THE HOME OF NEW YORK CORNED BEEF AND PASTRAMI"
+      
       videoSrc="/Home/Video_in_Light_Yellow_Maroon_White_Simple_and_Minimal_Simple_and_Minimal_Style.mp4" 
        />
+       <Header
+       text="The Home of New York Corned Beef and Pastrami"
+       />
       {/* <Menu /> */}
-      <ImageColumn/>
+      <MenuImageColumn/>
       {/* <EggsOmeletsMenu />
       <FrenchToastMenu />
       <BagelMenu/>
@@ -61,6 +70,7 @@ function HomePage() {
       <SpecialityWrapsMenu/>
       <OnTheSideMenu/>
       <DessertsMenu/> */}
+      <List/>
       <CTA/>
       <Footer/>
       <ScrollToTop />
@@ -71,10 +81,13 @@ function CateringPage() {
   return (
     <>
       <Banner
-      title="The Perfect Menu for Your Event"
       videoSrc="/CateringPage/CateringVid.mp4" 
        />
-        <ContinentalBreakfastCatering/>
+       <Header
+       text ="The Perfect Menu for Your Event"/>
+       <CateringMenu1/>
+       <List/>
+        {/* <ContinentalBreakfastCatering/>
         <HotBreakfastCatering/>
         <SmokedFishCatering/>
         <HotColdHorsCatering/>
@@ -84,8 +97,25 @@ function CateringPage() {
         <ColdAndHotCatering/>
         <PaniniCatering/>
         <PastaCatering/>
-        <HotEntreeCatering/>
+        <HotEntreeCatering/> */}
         <CTACatering/>
+        <Footer/>
+        <ScrollToTop />           
+       </>
+  );
+}
+function SideMenuPage() {
+  return (
+    <>
+     
+      <Banner
+      videoSrc="/Side_Menu/SideMenu.mp4" 
+       />
+          <Header
+       text="The Home of New York Corned Beef and Pastrami"
+       />
+       <SideMenu/>
+        <SideCTA/>
         <Footer/>
         <ScrollToTop />           
        </>
@@ -132,7 +162,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/side-menu" element={<SideMenuPage />} />
         <Route path="/caterings" element={<CateringPage />} />
+
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact-us" element={<ContactUsPage />} />
         <Route path="/thank-you" element={<ThankYouPage />} />
