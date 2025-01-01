@@ -23,7 +23,12 @@ const ThankYou = ({ title, line1, line2, line3 }) => {
               <ul className={`menu ${isMobile ? "menu-mobile" : isTablet ? "menu-tablet" : ""}`}>
                 <li>
                   <NavLink to="/" activeClassName="active-link">
-                    Home
+                    Menu
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/side-menu" activeClassName="active-link">
+                    Side Menu
                   </NavLink>
                 </li>
                 <li>

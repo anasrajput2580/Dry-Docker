@@ -6,7 +6,6 @@
   padding: 1.4vw; /* Responsive padding */
   position: relative;
   margin-top: -20px;
- 
 }
 
 .navbar {
@@ -150,6 +149,7 @@
   .navbar {
     flex-direction: column; /* Stack navbar items vertically */
     text-align: center;
+    font-size: 10px;
   }
 
   .menu {
@@ -193,13 +193,12 @@
   }
   .navbar {
     margin-left: 20px;
-    font-size: 12px;
+    font-size: 9px;
   }
   .menu ul {
-    gap: 15px; /* Reduce gap further */
+    gap: 10px; /* Reduce gap further */
     
   }
-
   .menu ul li {
     font-size: 12px; /* Smaller font size */
   }
@@ -219,4 +218,12 @@
   .statement {
     font-size: 16px;
   }
+}
+@media (max-width: 320px) {
+.navbar {
+  font-size: 7px;
+}
+.menu ul {
+  gap: -10px; /* Reduce gap further */
+}
 }
