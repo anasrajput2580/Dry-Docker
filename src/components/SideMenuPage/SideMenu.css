@@ -4,7 +4,7 @@
     align-items: flex-start; /* Align all images to the start (top-left) */
     gap: 10px; /* Space between images */
     padding: 10px;
-    background-color: #2f4f4f;
+    background-color: #ffffff;
   }
   
   .image-wrapper {
@@ -27,7 +27,7 @@
   }
   
 .image-wrapper img:hover {
-    transform: scale(1.05); /* Slight zoom effect */
+    /* transform: scale(1.05);  */
     transition: transform 0.3s ease-in-out;
     z-index: 5;
   }

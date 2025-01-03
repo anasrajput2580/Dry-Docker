@@ -1,28 +1,31 @@
 .footer {
   background-color: #ffffff;
   color: #333333;
-  padding: 10px 20px;
+  padding: 20px;
   font-family: "Inria Serif", serif;
 }
 
 .footer-content {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns for desktop */
+  grid-template-columns: repeat(3, 1fr); /* Default layout for larger screens */
   gap: 20px;
   align-items: start;
 }
 
 .footer-logo-img {
-  width: 140px;
+  width: 100px;
 }
 
 .footer-section {
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
-  font-size: small;
-  margin-bottom: 40px;
-  margin-top: 28px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  width: 200px;
+}
+
+.subheader-text {
+  font-size: 12px;
 }
 
 .footer-icon {
@@ -31,45 +34,59 @@
   color: #333;
 }
 
-.footer-contact-map {
+.footer-location-map {
   display: flex;
-  align-items: center;
-  gap: 20px;
-  margin-right: 40px;
-  margin-top: -13px;
+  gap: 10px;
 }
 
-.vertical-divider {
-  width: 4px;
-  background-color: #000000;
-  height: 180px;
+.footer-map {
+  border: 3px solid #000000;
+  border-radius: 20px;
 }
 
 .footer-map iframe {
-  width: 350px;
-  height: 150px;
-  border: 0;
-  margin-top: 5px;
+  border-radius: 20px;
+  height: fit-content;
 }
 
-.footer-note {
-  grid-column: span 3;
-  font-size: 12px;
-  color: #666666;
+.vertical-line {
+  border-left: 4px solid #000000; /* Vertical line */
 }
 
-.footer-note p {
-  margin-top: -40px;
+.space-after-contact {
+  padding-bottom: 20px;
+}
+
+/* Delivery Section */
+.delivery-section {
+  flex: 1;
+  border-left: 4px solid #000000; /* Vertical line */
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.delivery-text {
+  font-family: "Inria Serif", serif;
+  font-size: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.delivery-logo {
+  width: 100px;
+  margin-bottom: 10px;
 }
 
 .footer-social {
-  grid-column: span 4;
   display: flex;
-  justify-content: center;
   gap: 15px;
-  margin-top: 10px;
+  justify-content: flex-start;
 }
-
+.footer-social i {
+  font-size: 1.2rem;
+ color: #000000;
+}
 .social-icon {
   font-size: 1.1rem;
   color: #333333;
@@ -89,111 +106,85 @@
   text-decoration: underline;
 }
 
-/* Responsive Design */
-
-/* Large Screens (1440px and above) */
-@media (min-width: 1440px) {
-  .footer-content {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-  }
-  .footer-map iframe {
-    width: 400px;
-    height: 180px;
-  }
-  .footer-section {
-    display: flex;
-    flex-direction: column;
-    margin-left: -50px;
-    font-size: larger;
-    margin-bottom: 40px;
-
-  }
-  .footer-logo-img {
-    width: 170px;
-  }
+.vertical-divider {
+  background-color: #223d3c;
+  width: 2px;
+  height: auto;
+  margin: 0 10px;
 }
 
-/* Tablet devices (1024px and below) */
+/* Responsive Adjustments */
+
+/* Medium Screens (Tablets) */
 @media (max-width: 1024px) {
   .footer-content {
-    display:inline;
-    gap: 20px;
-    align-items: center;
+    grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+    gap: 15px;
   }
-  .footer-note {
-    grid-column: span 3;
-    font-size: 16px;
-    color: #666666;
-    display: inline;
+
+  .footer-section {
+    width: auto; /* Adjust width for flexible layout */
   }
-  .footer-note p {
-    margin-top: 0;
-    font-size: 16px;
-  }
-  .vertical-divider {
-    display: none;
-  }
-  .footer-contact-map {
-    display: inline;
+
+  .footer-location-map {
+    flex-direction: column; /* Stack location and map */
   }
 }
-
-/* Mobile devices (768px and below) */
+/* Small Screens (Mobile Phones) */
 @media (max-width: 768px) {
   .footer-content {
-    grid-template-columns: 1fr;
-    gap: 10px;
-    text-align: center;
-    display: inline;
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 15px;
+    text-align: center; /* Center align text */
+    justify-items: center; /* Center align grid items horizontally */
   }
+
   .footer-section {
-    align-items: center;
-    margin-bottom: 20px;
+    font-size: 10px; /* Slightly smaller text */
+    width: 100%; /* Full width on mobile */
+    text-align: center; /* Center align content */
+    align-items: center; /* Center align flex children */
   }
-  .footer-contact-map {
+
+  .footer-location-map {
     flex-direction: column;
-    gap: 10px;
+    align-items: center; /* Center align map section */
   }
-  .vertical-divider {
-    display: none;
-  }
+
   .footer-map iframe {
-    width: 100%;
-    height: 120px;
+    width: 100%; /* Responsive width for the map */
+    height: auto; /* Auto height for proportional scaling */
   }
-  .footer-note {
-    font-size: 10px;
-    margin-top: -10px;
+
+  .delivery-section {
+    flex-direction: column; /* Stack content vertically */
+    border-left: none; /* Remove vertical line on mobile */
+    border-top: 2px solid #000000; /* Add horizontal divider instead */
+    padding-top: 15px;
+    align-items: center; /* Center align delivery section */
+    text-align: center; /* Center text */
   }
+
+  .delivery-logo {
+    width: 80px; /* Smaller logo size */
+    margin-bottom: 10px;
+  }
+
   .footer-social {
-    flex-direction: row;
-    justify-content: center;
+    justify-content: center; /* Center align social icons */
     gap: 10px;
   }
-  
-}
 
-/* Small Mobile devices (480px and below) */
-@media (max-width: 480px) {
-  .footer-content {
-    display:inline;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns for desktop */
-    gap: 20px;
-    align-items: center;
-  }
-  .footer-note {
-    grid-column: span 3;
-    font-size: 16px;
-    color: #666666;
-    display: inline;
-  }
-  .footer-note p {
-    margin-top: 0;
-    font-size: 16px;
+  .social-icon {
+    font-size: 0.9rem;
   }
 
-  .footer-contact-map {
-    display: inline;
+  .footer-logo-img {
+    margin: 0 auto; /* Center the logo */
+    display: block;
+  }
+
+  .footer-map {
+    margin: 0 auto; /* Center the map */
   }
 }

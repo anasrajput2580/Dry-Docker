@@ -19,28 +19,21 @@ const CateringMenu = ({ img1, img2, img3 }) => {
       <div className="image-column-container">
         <div className="image-wrapper1">
           <img
-            src="./CateringPage/CateringImage3.png"
+            src="./CateringPage/CateringImage1Left.png"
             alt="Menu 1"
             className="responsive-image"
-            onClick={() => openModal("./CateringPage/CateringImage1.png")}
+            onClick={() => openModal("./CateringPage/CateringImage1Left.png")}
           />
         </div>
         <div className="image-wrapper2">
           <img
-            src="./CateringPage/CateringImage1.png"
+            src="./CateringPage/CateringImage2Right.png"
             alt="Menu 2"
             className="responsive-image"
-            onClick={() => openModal("./CateringPage/CateringImage1.png")}
+            onClick={() => openModal("./CateringPage/CateringImage2Right.png")}
           />
         </div>
-        <div className="image-wrapper3">
-          <img
-            src="./CateringPage/CateringImage2.png"
-            alt="Menu 2"
-            className="responsive-image"
-            onClick={() => openModal("./CateringPage/CateringImage1.png")}
-          />
-        </div>
+        
       </div>
 
       {isModalOpen && (

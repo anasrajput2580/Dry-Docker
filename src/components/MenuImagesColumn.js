@@ -19,18 +19,18 @@ const ImageColumn = ({ img1, img2, img3 }) => {
       <div className="image-column-container">
         <div className="image-wrapper1">
           <img
-            src="./Home/MenuImage1.jpg"
+            src="./Home/DDBMenuLeft.png"
             alt="Menu 1"
             className="responsive-image"
-            onClick={() => openModal("./Home/MenuImage1.jpg")}
+            onClick={() => openModal("./Home/DDBMenuLeft.png")}
           />
         </div>
         <div className="image-wrapper2">
           <img
-            src="./Home/MenuImage2.jpg"
+            src="./Home/DDBMenuRight.png"
             alt="Menu 2"
             className="responsive-image"
-            onClick={() => openModal("./Home/MenuImage2.jpg")}
+            onClick={() => openModal("./Home/DDBMenuRight.png")}
           />
         </div>
       </div>

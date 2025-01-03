@@ -115,6 +115,7 @@ function SideMenuPage() {
        text="The Home of New York Corned Beef and Pastrami"
        />
        <SideMenu/>
+       <List/>
         <SideCTA/>
         <Footer/>
         <ScrollToTop />           

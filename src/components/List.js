@@ -5,6 +5,9 @@ const List = () => {
   return (
     <div className="bistro-footer">
     <ul className="bistro-list">
+    <li>
+        <span className="checkmark">✔</span> Our chicken and beef are sourced from certified organic and halal suppliers.
+      </li>
       <li>
         <span className="checkmark">✔</span> The menu items, prices, and
         availability listed on this website are subject to change without
@@ -24,7 +27,6 @@ const List = () => {
       </li>
     </ul>
   </div>
-
   );
 };
 

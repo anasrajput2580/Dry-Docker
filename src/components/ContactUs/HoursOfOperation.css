@@ -1,34 +1,41 @@
-/* Container for map and hours section */
+/* Hours Container */
 .hours-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   background-color: #264140; /* Dark greenish background */
   color: #ffffff; /* Text color */
-  padding: 20px 40px;
+  padding: 20px;
   border-radius: 8px;
-  gap: 20px; /* Adds spacing between map and hours */
-  flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 /* Map Section */
 .map-section {
   flex: 1;
-  max-width: 50%;
+  max-width: 25%; /* Adjust map width */
 }
 
 .map-iframe {
   width: 100%;
-  height: 250px;
+  height: 180px;
   border: none;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+/* Content Section */
+.content-section {
+  flex: 3; /* Increased width for the content section */
+  display: flex;
+  flex-direction: row; /* Sections side by side */
+  gap: 20px;
+}
+
 /* Hours Section */
 .hours-section {
   flex: 1;
-  padding-left: 20px;
 }
 
 .hours-section h2 {
@@ -44,26 +51,50 @@
 }
 
 .hours-section li {
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-bottom: 5px;
 }
 
 .hours-section p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.5;
 }
 
-.contact-number {
-  color: #b8e2d0; /* Light greenish text */
-  text-decoration: none;
+/* Delivery Section */
+.delivery-section {
+  flex: 1;
+  border-left: 4px solid #ffffff; /* Vertical line */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+}
+
+.delivery-text {
+  font-family: "Inria Serif", serif;
+  font-size: 0.9rem;
   font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
 }
 
-.contact-number:hover {
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Spacing between logos */
+}
+
+.delivery-logo {
+  height: 60px; /* Adjusted logo size */
+  object-fit: contain;
+}
+.hours-section a {
   text-decoration: underline;
+  color:#ffffff;
 }
-
-/* RESPONSIVE DESIGN */
+/* Responsive Design */
 
 /* Tablets (768px - 1024px) */
 @media screen and (max-width: 1024px) {
@@ -79,60 +110,39 @@
   }
 
   .map-iframe {
-    height: 220px; /* Adjusted for smaller tablets */
+    height: 200px;
   }
 
-  .hours-section {
+  .content-section {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center;
+  }
+
+  .delivery-section {
+    border-left: none;
+    border-top: 2px solid #ffffff; /* Horizontal line for smaller screens */
     padding-left: 0;
-    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .logos {
+    flex-wrap: wrap; /* Allow logos to wrap for smaller screens */
+  }
+
+  .delivery-logo {
+    height: 50px;
   }
 }
 
-/* Mobile Devices (480px - 767px) */
+/* Mobile Devices (up to 767px) */
 @media screen and (max-width: 767px) {
-  .hours-container {
-    flex-direction: column;
-    padding: 15px;
-    gap: 15px;
-  }
-
-  .map-section {
-    max-width: 100%;
-  }
-
   .map-iframe {
-    height: 180px;
+    height: 150px;
   }
 
   .hours-section h2 {
     font-size: 1.25rem;
-  }
-
-  .hours-section li,
-  .hours-section p {
-    font-size: 0.9rem;
-  }
-}
-
-/* Small Mobile Devices (up to 480px) */
-@media screen and (max-width: 480px) {
-  .hours-container {
-    padding: 10px;
-    gap: 10px;
-    align-content: center;
-  }
-
-  .map-section {
-    max-width: 100%;
-  }
-
-  .map-iframe {
-    height: 150px;
-    width: 100%; /* Adjusted for small screens */
-  }
-
-  .hours-section h2 {
-    font-size: 1.1rem;
     text-align: center;
   }
 
@@ -140,16 +150,20 @@
     margin-left: 10px;
   }
 
-  .hours-section li {
-    font-size: 0.85rem;
-  }
-
+  .hours-section li,
   .hours-section p {
     font-size: 0.85rem;
-    text-align: center;
   }
 
-  .contact-number {
-    font-size: 0.9rem;
+  .delivery-text {
+    font-size: 0.85rem;
+  }
+
+  .logos {
+    gap: 5px; /* Reduce gap for smaller screens */
+  }
+
+  .delivery-logo {
+    height: 60px; /* Smaller size for mobile */
   }
 }
