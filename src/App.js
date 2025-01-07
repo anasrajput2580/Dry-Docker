@@ -73,7 +73,7 @@ function HomePage() {
       <List/>
       <CTA/>
       <Footer/>
-      {/* <ScrollToTop /> */}
+      <ScrollToTop />
     </>
   );
 }
