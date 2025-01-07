@@ -8,7 +8,7 @@ const AboutSection = () => {
       <div className="top-banner">
         <h1>Where Every Bite is Full of Flavor</h1>
         <p>
-          Where Every Bite is Full of Flavor Your destination where culinary traditions
+          Your destination where culinary traditions
           bring joy to every bite. With a menu inspired by the rich heritage of American
           delis and infused with Mediterranean and Jewish flavors, we offer something
           special for everyone.

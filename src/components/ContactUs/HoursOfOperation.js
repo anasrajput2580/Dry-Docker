@@ -32,17 +32,15 @@ const HoursOfOperation = () => {
           </p>
         </div>
 
-        {/* Delivery Section */}
-        <div class="delivery-section">
-          <p class="delivery-text">Enjoy your favorites delivered right to your door!</p>
-        <div class="logos">
-          <img src="./Footer/UberLogo.png" alt="Delivery Logo 1" class="delivery-logo" />
+        <div class="delivery-section-c">
+          <p class="delivery-text-c">Enjoy your favorites delivered right to your door!</p>
+        <div class="logos-c">
+          <img src="./Footer/UberLogo.png" alt="Dselivery Logo 1" class="delivery-logo-c" />
         </div>
-        <div class="logos">
-          <img src="./Footer/DoorLogo.png" alt="Delivery Logo 2" class="delivery-logo" />
+        <div class="logos-c2">
+          <img src="./Footer/DoorLogo.png" alt="Dselivery Logo 2" class="delivery-logo-c2" />
         </div>
         </div>
-
       </div>
     </div>
   );

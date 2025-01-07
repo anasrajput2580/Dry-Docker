@@ -56,6 +56,10 @@ const CTAText = styled.div`
     @media (min-width: 1200px) {
       font-size: 28px; /* Even larger font for large screens */
     }
+          @media (min-width: 1400px) {
+      font-size: 28px; /* Larger font for larger screens */
+      margin-left: 120px;
+    }
   }
 
   p {
@@ -74,6 +78,10 @@ const CTAText = styled.div`
 
     @media (min-width: 1200px) {
       font-size: 16px; /* Larger font for larger screens */
+    }
+          @media (min-width: 1400px) {
+      font-size: 16px; /* Larger font for larger screens */
+      margin-left: 120px;
     }
   }
 `;
@@ -110,6 +118,12 @@ const CTAButton = styled.a`
   @media (min-width: 1200px) {
     font-size: 18px; /* Larger font size for buttons */
     padding: 12px 24px; /* More spacious button for larger screens */
+  }
+       @media (min-width: 1400px) {
+    font-size: 20px; /* Larger font size for buttons */
+       /*More spacious button for larger screens */
+     margin-right: 150px;
+      width: 20%;
   }
 `;
 

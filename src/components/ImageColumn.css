@@ -6,7 +6,6 @@
   gap: 1px; /* Space between images */
   padding: 10px;
   /* background-color: #2f4f4f; */
-
 }
 
 .menu-section-header {
@@ -37,9 +36,9 @@
 .image-wrapper2,
 .image-wrapper3 img {
   display: block; /* Ensure no extra space from inline elements */
-  width: auto; /* Maintain natural width */
+  /* width: auto; Maintain natural width */
   max-width: 100%; /* Limit image size to container width */
-  height: auto; /* Maintain aspect ratio */
+ /* Maintain aspect ratio */
   
 }
 

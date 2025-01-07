@@ -61,7 +61,7 @@
 }
 
 /* Delivery Section */
-.delivery-section {
+.delivery-section-c {
   flex: 1;
   border-left: 4px solid #ffffff; /* Vertical line */
 
@@ -71,22 +71,24 @@
   justify-content: center; /* Center content vertically */
 }
 
-.delivery-text {
+.delivery-text-c {
   font-family: "Inria Serif", serif;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: bold;
   margin-bottom: 10px;
   text-align: left;
 }
 
-.logos {
+.logos-c {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px; /* Spacing between logos */
 }
-
-.delivery-logo {
+.logos-c2 img {
+  height: 100px;
+}
+.delivery-logo-c {
   height: 60px; /* Adjusted logo size */
   object-fit: contain;
 }
@@ -95,7 +97,49 @@
   color:#ffffff;
 }
 /* Responsive Design */
+@media (min-width: 1400px) and  (min-width: 1600px) {
+  
+  .map-iframe {
+    width: 100%;
+    height: 250px;
+  }
+  .hours-section h2 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
 
+.hours-section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.hours-section li {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.hours-section p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+  .delivery-text-c {
+    font-size: 20px;
+    text-align: left;
+  }
+  
+  .delivery-logo-c {
+    width: 200px;
+    /* height: auto; */
+  }
+  .logos-c img {
+    height: 90px;
+  }
+  .logos-c2 img {
+    height: 120px;
+  }
+  }
 /* Tablets (768px - 1024px) */
 @media screen and (max-width: 1024px) {
   .hours-container {
@@ -118,7 +162,7 @@
     align-items: center;
   }
 
-  .delivery-section {
+  .delivery-section-c {
     border-left: none;
     border-top: 2px solid #ffffff; /* Horizontal line for smaller screens */
     padding-left: 0;
@@ -126,11 +170,11 @@
     text-align: center;
   }
 
-  .logos {
+  .logos-c {
     flex-wrap: wrap; /* Allow logos to wrap for smaller screens */
   }
 
-  .delivery-logo {
+  .delivery-logo-c {
     height: 50px;
   }
 }
@@ -155,15 +199,15 @@
     font-size: 0.85rem;
   }
 
-  .delivery-text {
+  .delivery-text-c {
     font-size: 0.85rem;
   }
 
-  .logos {
+  .logos-c {
     gap: 5px; /* Reduce gap for smaller screens */
   }
 
-  .delivery-logo {
+  .delivery-logo-c {
     height: 60px; /* Smaller size for mobile */
   }
 }

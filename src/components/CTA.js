@@ -9,14 +9,12 @@ const CTASection = styled.div`
   align-items: center;
   gap: 10px; /* Add gap between content and button */
 
-
   @media (max-width: 768px) {
     flex-direction: column; /* Stack items vertically on smaller screens */
     text-align: center;
     gap: 15px; /* Increase spacing between text and button */
     padding: 15px 10px; /* Adjust padding for smaller screens */
   }
-
   @media (max-width: 480px) {
     padding: 15px 5px; /* Compact padding for smaller devices */
     gap: 10px; /* Ensure consistent spacing */
@@ -27,7 +25,6 @@ const CTASection = styled.div`
     gap: -20px; /* Increased gap for better spacing */
     padding-left: 220px;
     padding-right:350px;
-    
   }
 `;
 
@@ -36,12 +33,10 @@ const CTAText = styled.div`
   font-family: "Inria Serif", serif;
 
   h2 {
-    font-size: 24px; /* Larger font for headings */
+    font-size: 18px; /* Larger font for headings */
     font-weight: bold;
     margin-bottom: 10px;
       margin-top: -15px;
-
-    
 
     @media (max-width: 768px) {
       font-size: 16px; /* Adjusted for tablets */
@@ -56,10 +51,13 @@ const CTAText = styled.div`
     @media (min-width: 1200px) {
       font-size: 28px; /* Even larger font for large screens */
     }
+       @media (min-width: 1400px) {
+      margin-left: 120px;
+    }
   }
 
   p {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.5;
     margin: 0;
     margin-bottom: -10px; 
@@ -74,6 +72,10 @@ const CTAText = styled.div`
 
     @media (min-width: 1200px) {
       font-size: 16px; /* Larger font for larger screens */
+    }
+         @media (min-width: 1400px) {
+      font-size: 16px; /* Larger font for larger screens */
+      margin-left: 120px;
     }
   }
 `;
@@ -90,7 +92,7 @@ const CTAButton = styled.a`
   transition: background-color 0.3s;
   align-self: center; /* Ensure proper alignment */
   text-align: center;
-  width: 35%;
+  width: 40%;
 
   &:hover {
     background-color: #f8cf40; /* Hover color (gold) */
@@ -109,8 +111,16 @@ const CTAButton = styled.a`
   }
 
   @media (min-width: 1200px) {
-    font-size: 18px; /* Larger font size for buttons */
-    padding: 12px 24px; /* More spacious button for larger screens */
+      font-size: 20px; /* Larger font size for buttons */
+       /*More spacious button for larger screens */
+     margin-right: 150px;
+      width: 20%;
+  }
+      @media (min-width: 1400px) {
+    font-size: 20px; /* Larger font size for buttons */
+       /*More spacious button for larger screens */
+     margin-right: 150px;
+      width: 20%;
   }
 `;
 
