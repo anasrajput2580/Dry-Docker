@@ -111,11 +111,9 @@ function SideMenuPage() {
       <Banner
       videoSrc="/Side_Menu/SideMenu.mp4" 
        />
-          <Header
-       text="The Home of New York Corned Beef and Pastrami"
-       />
-       <SideMenu/>
-       <List/>
+         
+        <SideMenu/>
+        <List/>
         <SideCTA/>
         <Footer/>
         <ScrollToTop />           

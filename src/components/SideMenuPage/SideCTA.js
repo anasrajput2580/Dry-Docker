@@ -46,6 +46,7 @@ const CTAText = styled.div`
     @media (max-width: 768px) {
       font-size: 16px; /* Adjusted for tablets */
       margin-left: 0; /* Center align text */
+       padding-top:10px;
     }
 
     @media (max-width: 480px) {

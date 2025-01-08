@@ -16,11 +16,12 @@
   
   .image-wrapper img {
     display: block; /* Ensure no extra space from inline elements */
-    width: auto; /* Maintain natural width */
-    max-width: 100%; /* Limit image size to container width */
-    height: auto; /* Maintain aspect ratio */
-    
-  }
+    object-fit: cover; /* Ensures the image fills the container while maintaining aspect ratio */
+   /* Optional: Add a border for better appearance */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    transition: transform 0.3s ease-in-out; /* Smooth scaling effect on hover */
+}
+
   
   .image-wrapper img:first-child {
     margin-bottom: 10px; /* Add spacing between the images */

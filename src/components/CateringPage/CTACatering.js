@@ -22,6 +22,7 @@ const CTACSection = styled.div`
   @media (max-width: 480px) {
     padding: 15px 5px; /* Compact padding for smaller devices */
     gap: 10px; /* Ensure consistent spacing */
+    
   }
 
   @media (min-width: 1200px) {
@@ -47,6 +48,7 @@ const CTACText = styled.div`
     @media (max-width: 768px) {
       font-size: 16px; /* Adjusted for tablets */
       margin-left: 0; /* Center align text */
+       padding-top:10px;
     }
 
     @media (max-width: 480px) {
@@ -108,7 +110,7 @@ const CTACButton = styled.a`
 
   @media (max-width: 768px) {
     margin-top: 10px; /* Reduced margin for smaller screens */
-    padding: 8px 12px; /* Adjust padding for tablets */
+    padding: 6px 10px; /* Adjust padding for tablets */
   }
 
   @media (max-width: 480px) {

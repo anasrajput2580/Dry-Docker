@@ -42,6 +42,7 @@
   font-size: 1.5rem;
   margin-bottom: 10px;
   color: #ffffff;
+ 
 }
 
 .hours-section ul {
@@ -69,11 +70,12 @@
   flex-direction: column;
   align-items: center; /* Center content horizontally */
   justify-content: center; /* Center content vertically */
+
 }
 
 .delivery-text-c {
   font-family: "Inria Serif", serif;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 10px;
   text-align: left;
@@ -83,7 +85,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px; /* Spacing between logos */
+  gap: 0px; /* Spacing between logos */
 }
 .logos-c2 img {
   height: 100px;
@@ -111,7 +113,7 @@
 
 .hours-section ul {
   list-style-type: disc;
-  margin-left: 20px;
+  margin-left: 10px;
   margin-bottom: 10px;
 }
 
@@ -124,13 +126,16 @@
   font-size: 1.2rem;
   line-height: 1.5;
 }
-  .delivery-text-c {
-    font-size: 20px;
+
+.delivery-text-c {
+    font-size: 24px;
     text-align: left;
   }
-  
+  .delivery-section-c {
+   align-items:center;
+  }
   .delivery-logo-c {
-    width: 200px;
+    width: 300px;
     /* height: auto; */
   }
   .logos-c img {
@@ -192,19 +197,28 @@
 
   .hours-section ul {
     margin-left: 10px;
+   align-items: center;
+
   }
 
-  .hours-section li,
+ 
   .hours-section p {
     font-size: 0.85rem;
+    text-align: center;
   }
-
+.delivery-section-c {
+  border-top: none;
+ 
+}
   .delivery-text-c {
+    margin-top: -20px;
     font-size: 0.85rem;
+    text-align: center;
   }
 
   .logos-c {
-    gap: 5px; /* Reduce gap for smaller screens */
+    gap: 1px; /* Reduce gap for smaller screens */
+  
   }
 
   .delivery-logo-c {

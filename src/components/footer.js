@@ -8,6 +8,7 @@ import {
   FaInstagram,
   FaMap,
 } from "react-icons/fa";
+import { FaX } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -62,7 +63,8 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
           >
-          <i className="fab fa-x-twitter"></i>
+          {/* <i className="fab fa-x-twitter"></i> */}
+          <FaX className="social-icon"/>
           </a>
           <a
             href="https://www.instagram.com/explore/locations/109369407078722/dry-dock-bistro/"
@@ -116,7 +118,7 @@ const Footer = () => {
             <img
               src="./Footer/DoorLogo.png"
               alt="DoorDash Logo"
-              className="delivery-logo"
+              className="delivery-logo2"
             />
           </div>
         </div>
