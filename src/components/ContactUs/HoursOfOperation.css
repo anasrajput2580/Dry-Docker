@@ -185,23 +185,26 @@
 }
 
 /* Mobile Devices (up to 767px) */
-@media screen and (max-width: 767px) {
+@media   (max-width: 767px) {
   .map-iframe {
     height: 150px;
   }
-
+.hours-section {
+  align-items: center;
+}
   .hours-section h2 {
     font-size: 1.25rem;
     text-align: center;
   }
-
-  .hours-section ul {
-    margin-left: 10px;
-   align-items: center;
-
-  }
-
- 
+.hours-section ul {
+  text-align: center;
+  align-content: center;
+}
+.hours-section li {
+  /* margin-left: 50px;  */
+  text-align: center;
+  align-content: center; 
+}
   .hours-section p {
     font-size: 0.85rem;
     text-align: center;
@@ -224,4 +227,45 @@
   .delivery-logo-c {
     height: 60px; /* Smaller size for mobile */
   }
+}
+@media  (max-width: 480px)  {
+  /* .map-iframe {
+    height: 150px;
+  }
+
+  .hours-section h2 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .hours-section ul {
+    margin-left: 10px;
+   align-items: center;
+
+  }
+  .hours-section li {
+    margin-left: 0;
+  }
+  .hours-section p {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+.delivery-section-c {
+  border-top: none;
+ 
+}
+  .delivery-text-c {
+    margin-top: -20px;
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  .logos-c {
+    gap: 1px; 
+  
+  }
+
+  .delivery-logo-c {
+    height: 60px; 
+  } */
 }
