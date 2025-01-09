@@ -29,7 +29,6 @@
   
   .image-wrapper1:hover,
   .image-wrapper2:hover {
-  
     z-index: 5;
   }
   
@@ -76,6 +75,9 @@
       flex-direction: row; /* Change to row layout for tablets and above */
       justify-content: center;
     }
+    .image-wrapper {
+      margin-bottom: -20px;
+    }
   }
   
   /* Extra-large screens */
@@ -84,13 +86,16 @@
       gap: 20px; /* Increase spacing on larger screens */
     }
   }
-  
+
   /* Small mobile devices (480px and below) */
   @media (max-width: 480px) {
     .menu-section-header {
       font-size: 12px;
       border-radius: 25px;
       width: 99%;
+    }
+    .image-wrapper {
+      margin-bottom: -30px;
     }
   }
   

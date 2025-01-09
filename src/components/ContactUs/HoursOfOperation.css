@@ -191,19 +191,23 @@
   }
 .hours-section {
   align-items: center;
+  align-content: center;
+
+ 
 }
   .hours-section h2 {
     font-size: 1.25rem;
     text-align: center;
   }
 .hours-section ul {
-  text-align: center;
-  align-content: center;
+  /* text-align: center;
+  align-content: center; */
+  list-style: none;
+  margin-left: 0;
 }
 .hours-section li {
   /* margin-left: 50px;  */
   text-align: center;
-  align-content: center; 
 }
   .hours-section p {
     font-size: 0.85rem;

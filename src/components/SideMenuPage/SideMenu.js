@@ -22,7 +22,8 @@ const SideMenu = () => {
             alt="Menu 2"
             className="responsive-image"
             onClick={() => openModal("./Side_Menu/Side-Left.png")}
-          /></div>
+          />
+        </div>
         <div className="image-wrapper">
           <img
             src="./Side_Menu/Side-Right.png"

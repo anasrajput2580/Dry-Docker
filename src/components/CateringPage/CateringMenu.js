@@ -33,7 +33,6 @@ const CateringMenu = ({ img1, img2, img3 }) => {
             onClick={() => openModal("./CateringPage/CateringImage2Right.png")}
           />
         </div>
-        
       </div>
 
       {isModalOpen && (

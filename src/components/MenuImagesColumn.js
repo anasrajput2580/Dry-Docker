@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ImageColumn.css";
 
-const ImageColumn = ({ img1, img2, img3 }) => {
+const ImageColumn = () => {
   const [modalImage, setModalImage] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
 

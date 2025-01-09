@@ -6,7 +6,6 @@ const ContactUs = () => {
   // Media Queries
   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
   const isMobile = useMediaQuery({ maxWidth: 767 });
-
   return (
     <div className="banner">
       {/* Menu Section */}
@@ -19,14 +18,12 @@ const ContactUs = () => {
           <NavLink to="/side-menu" activeClassName="active-link">Side Menu</NavLink>
           </li>
           <li>
-
             <NavLink to="/caterings" activeClassName="active-link">Catering</NavLink>
           </li>
           <li>
           <NavLink to="/about" activeClassName="active-link">About Us</NavLink>
           </li>
           <li>
-
             <NavLink to="/contact-us" activeClassName="active-link">Contact Us</NavLink>
           </li>
         </ul>

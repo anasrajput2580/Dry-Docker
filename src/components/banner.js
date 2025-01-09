@@ -28,7 +28,7 @@ const Banner = ({ videoSrc, title, subtitle }) => {
               Menu
             </NavLink>
           </li>
-          <li>
+          <li> 
             <NavLink to="/side-menu" activeClassName="active-link">
               Side Menu
             </NavLink>

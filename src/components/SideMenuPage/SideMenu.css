@@ -13,7 +13,6 @@
     align-items: flex-start; /* Align each image to the start */
     width: 100%;
   }
-  
   .image-wrapper img {
     display: block; /* Ensure no extra space from inline elements */
     object-fit: cover; /* Ensures the image fills the container while maintaining aspect ratio */
@@ -22,8 +21,7 @@
     transition: transform 0.3s ease-in-out; /* Smooth scaling effect on hover */
 }
 
-  
-  .image-wrapper img:first-child {
+.image-wrapper img:first-child {
     margin-bottom: 10px; /* Add spacing between the images */
   }
   
@@ -75,6 +73,7 @@
     .image-wrapper {
       flex-direction: row; /* Align images horizontally */
       gap: 10px; /* Add spacing between images */
+      margin-bottom: -50px;
     }
   }
   
@@ -84,6 +83,9 @@
       font-size: 12px;
       border-radius: 25px;
       width: 99%;
+    }
+    .image-wrapper {
+      margin-bottom: -50px;
     }
   }
   
