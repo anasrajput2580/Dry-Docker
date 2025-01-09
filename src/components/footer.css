@@ -184,21 +184,21 @@
 @media  (min-width: 1280px) and (max-width: 1650px) {
   .footer-location-map {
     display: flex;
-    gap: 30px;
+    gap: 10px;
     margin-right: 60px;
   }
   .footer-map, .footer-map iframe {
-   width: 150px;
+   width: 180px;
    height: 180px;
   }
   
   .delivery-text {
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
   }
   
   .delivery-logo {
-    width: 150px;
+    width: 100px;
     /* height: auto; */
   }
   .logos img {
