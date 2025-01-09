@@ -8,25 +8,7 @@
     background-color: #2f4f4f;
   }
   
-  .menu-section-header {
-    background-color: #2f4f4f;
-    color: #fff;
-    padding: 2px;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-    text-transform: uppercase;
-  }
-  
-  .catering-wrapper1,
-  .catering-wrapper2,
-  .catering-wrapper3 {
-    width: 100%;
-    max-width: 900px; /* Set a max width for images */
-    border-color: black;
-  }
-  
+
   .image-wrapper1:hover,
   .image-wrapper2:hover {
     z-index: 5;
@@ -75,8 +57,11 @@
       flex-direction: row; /* Change to row layout for tablets and above */
       justify-content: center;
     }
-    .image-wrapper {
-      margin-bottom: -20px;
+    .image-wrapper1 {
+      margin-bottom: -22px;
+    }
+    .image-wrapper2 {
+      margin-bottom: -33px;
     }
   }
   
@@ -94,8 +79,11 @@
       border-radius: 25px;
       width: 99%;
     }
-    .image-wrapper {
-      margin-bottom: -30px;
+    .image-wrapper1 {
+      margin-bottom: -22px;
+    }
+    .image-wrapper2 {
+      margin-bottom: -33px;
     }
   }
   

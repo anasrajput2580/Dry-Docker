@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import './CateringMenu.css';
 
 const CateringMenu = ({ img1, img2, img3 }) => {
   const [modalImage, setModalImage] = useState("");
@@ -34,7 +34,7 @@ const CateringMenu = ({ img1, img2, img3 }) => {
           />
         </div>
       </div>
-
+      
       {isModalOpen && (
         <div className="image-modal" onClick={closeModal}>
           <span className="close-btn" onClick={closeModal}>

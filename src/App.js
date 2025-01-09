@@ -113,7 +113,7 @@ function SideMenuPage() {
        />
          
         <SideMenu/>
-        <List/>
+        {/* <List/> */}
         <SideCTA/>
         <Footer/>
         <ScrollToTop />           
