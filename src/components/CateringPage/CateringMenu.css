@@ -16,7 +16,7 @@
   
   .responsive-image {
     width: 100%; /* Make images responsive */
-    cursor: pointer; /* Pointer cursor for clickable images */
+    cursor: default; /* Pointer cursor for clickable images */
   }
   
   /* Modal styles */

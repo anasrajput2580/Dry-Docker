@@ -39,9 +39,11 @@
   /* width: auto; Maintain natural width */
   max-width: 100%; /* Limit image size to container width */
  /* Maintain aspect ratio */
-  
+ cursor:default;
 }
-
+.image-column-container:hover  {
+  cursor:default;
+}
 /* .image-wrapper1:hover,
 .image-wrapper2:hover,
 .image-wrapper3:hover  img:first-child {
@@ -58,7 +60,7 @@
 
 .responsive-image {
   width: 100%; /* Make images responsive */
-  cursor: pointer; /* Pointer cursor for clickable images */
+  cursor: default; /* Pointer cursor for clickable images */
 }
 
 /* Modal styles */

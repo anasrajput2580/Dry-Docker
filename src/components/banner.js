@@ -20,15 +20,19 @@ const Banner = ({ videoSrc, title, subtitle }) => {
 
   return (
     <div className="banner">
-      {/* Menu Section */}
+      {/* Navigation Menu */}
       <nav className={`navbar ${isMobile ? "navbar-mobile" : ""}`}>
-        <ul className={`menu ${isMobile ? "menu-mobile" : isTablet ? "menu-tablet" : ""}`}>
+        <ul
+          className={`menu ${
+            isMobile ? "menu-mobile" : isTablet ? "menu-tablet" : "menu-desktop"
+          }`}
+        >
           <li>
-            <NavLink to="/" activeClassName="active-link">
+            <NavLink exact to="/" activeClassName="active-link">
               Menu
             </NavLink>
           </li>
-          <li> 
+          <li>
             <NavLink to="/side-menu" activeClassName="active-link">
               Side Menu
             </NavLink>
@@ -50,17 +54,29 @@ const Banner = ({ videoSrc, title, subtitle }) => {
           </li>
         </ul>
       </nav>
+
+      {/* Header Section */}
       <div className="header">
         <img
           src="./Website_Logo/DryDockMenu.png" // Replace with the actual path to your logo
-          alt="Dry Dock Bistro Logo Error"
+          alt="Dry Dock Bistro Logo"
           className="logo"
         />
       </div>
+
+      {/* Title Section */}
       <p className="statement">{title}</p>
+
+      {/* Video Background */}
       <div className="video-container">
-        {/* Video Background */}
-        <video ref={videoRef} autoPlay muted loop className="video">
+        <video
+          ref={videoRef}
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="video"
+        >
           <source src={videoSrc} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
