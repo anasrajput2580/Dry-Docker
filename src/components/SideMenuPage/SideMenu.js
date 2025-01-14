@@ -17,14 +17,14 @@ const SideMenu = () => {
   return (
     <>
       <div className="image-column-area">
-        <div className="image-wrapper">  <img
+        <div className="image-side-wrapper1">  <img
             src="./Side_Menu/Side-Left.png"
             alt="Menu 2"
             className="responsive-image"
             // onClick={() => openModal("./Side_Menu/Side-Left.png")}
           />
         </div>
-        <div className="image-wrapper">
+        <div className="image-side-wrapper2">
           <img
             src="./Side_Menu/Side-Right.png"
             alt="Menu 2"

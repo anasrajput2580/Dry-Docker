@@ -17,7 +17,7 @@ const CateringMenu = ({ img1, img2, img3 }) => {
   return (
     <>
       <div className="image-column-container">
-        <div className="image-wrapper1">
+        <div className="image-catering-wrapper1">
           <img
             src="./CateringPage/CateringImage1Left.png"
             alt="Menu 1"
@@ -25,7 +25,7 @@ const CateringMenu = ({ img1, img2, img3 }) => {
             // onClick={() => openModal("./CateringPage/CateringImage1Left.png")}
           />
         </div>
-        <div className="image-wrapper2">
+        <div className="image-catering-wrapper2">
           <img
             src="./CateringPage/CateringImage2Right.png"
             alt="Menu 2"

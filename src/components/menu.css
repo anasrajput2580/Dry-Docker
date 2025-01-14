@@ -5,7 +5,6 @@
   padding: 20px;
   line-height: 1.6;
   margin-top: -25px;
-
 }
 
 .menu-line {
@@ -85,7 +84,6 @@
   margin-left: 300px;
   font-size: 14px;
   font-style: italic;
- 
   padding-bottom: 10px;
 }
 
@@ -113,13 +111,10 @@
 
 
 @media (min-width: 1200px) {
-
-
   .food-header,
   .food-option {
     max-width: 800px; /* Adjust layout width for better alignment */
     margin: 0 auto; /* Center-align the elements */
-
     position: relative;
   }
 

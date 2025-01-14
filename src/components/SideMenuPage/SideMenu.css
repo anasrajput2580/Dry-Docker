@@ -1,33 +1,31 @@
 .image-column-area {
     display: flex;
-    flex-direction: column; /* Default to column layout */
+    flex-direction: row; /* Default to column layout */
     align-items: flex-start; /* Align all images to the start (top-left) */
     gap: 10px; /* Space between images */
     padding: 10px;
     background-color: #ffffff;
   }
   
-  .image-wrapper {
+  .image-side-wrapper1, .image-side-wrapper2  {
     display: flex;
     flex-direction: column; /* Stack images vertically */
     align-items: flex-start; /* Align each image to the start */
     width: 100%;
   }
-  .image-wrapper img {
+  .image-side-wrapper1, .image-side-wrapper2  img {
     display: block; /* Ensure no extra space from inline elements */
-    object-fit: cover; /* Ensures the image fills the container while maintaining aspect ratio */
+   
    /* Optional: Add a border for better appearance */
     border-radius: 10px; /* Optional: Add rounded corners */
-    transition: transform 0.3s ease-in-out; /* Smooth scaling effect on hover */
+    /* transition: transform 0.3s ease-in-out;  */
+
 }
 
-.image-wrapper img:first-child {
-    margin-bottom: 10px; /* Add spacing between the images */
-  }
   
-.image-wrapper img:hover {
+  .image-side-wrapper1, .image-side-wrapper2  img:hover {
     /* transform: scale(1.05);  */
-    transition: transform 0.3s ease-in-out;
+    /* transition: transform 0.3s ease-in-out; */
     cursor:default;
     z-index: 5;
   }
@@ -95,32 +93,42 @@
   }
   
   /* Responsive design for larger screens */
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     .image-column-area {
-      flex-direction: row; /* Change to row layout for tablets and above */
-      justify-content: center;
-      gap: 20px;
+      flex-direction: column;
     }
-    .image-wrapper {
-      flex-direction: row; /* Align images horizontally */
-      gap: 10px; /* Add spacing between images */
-      margin-bottom: -50px;
+  .image-side-wrapper1  {
+      z-index: 1;
     }
+    .image-side-wrapper2  {
+      margin-top: -110px;
+      z-index: 1;
+    }
+    .Cat-footer {
+      padding: 15px 5px;
+  }
   }
   
   /* Mobile devices (480px and below) */
-  @media (max-width: 480px) {
+  @media (max-width: 767px) {
+    .image-column-area {
+      flex-direction: column;
+    }
     .menu-section-header {
+      flex-direction: column;
       font-size: 12px;
       border-radius: 25px;
       width: 99%;
     }
-    .image-wrapper {
-      margin-bottom: -35px;
+    .image-side-wrapper1  {
+      z-index: 1;
+    }
+    .image-side-wrapper2  {
+      margin-top: -110px;
+      z-index: 1;
     }
     .Cat-footer {
       padding: 15px 5px;
-      margin-top: -65px;
   }
 
   .Cat-list li {
