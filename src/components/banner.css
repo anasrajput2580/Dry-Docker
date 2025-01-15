@@ -131,7 +131,7 @@
 
   .menu ul li {
     font-size: 18px; /* Slightly smaller font */
-    margin-right: 2vw; /* Adjust spacing */
+    margin-right: 2vw; 
   }
 
   .header .logo {
@@ -203,10 +203,11 @@
   }
   .navbar {
     margin-left: 20px;
-    font-size: 12px;
+    font-size: 11px;
+    gap: 2px;
   }
   .menu ul {
-    gap: 10px; /* Reduce gap further */
+    gap: 2px; /* Reduce gap further */
   }
   .menu ul li {
     font-size: 12px; /* Smaller font size */
@@ -229,9 +230,37 @@
     font-size: 16px;
   }
 }
-@media (max-width: 320px) {
-.navbar {
-  font-size: 9px;
-}
 
+@media (max-width: 420px) {
+.navbar {
+  font-size: 10px;
+  gap:1px;
+}
+}
+@media (max-width: 380px) {
+  .navbar {
+    font-size: 8px;
+    gap:1px;
+  }
+  .menu ul {
+    gap: 2px; /* Reduce gap further */
+  }
+}
+  @media (max-width: 330px) {
+    .navbar {
+      font-size: 7px;
+      gap:1px;
+    }
+    .menu ul {
+      gap: 2px; /* Reduce gap further */
+    }
+}
+@media (max-width: 270px) {
+  .navbar {
+    font-size: 5px;
+    gap:1px;
+  }
+  .menu ul {
+    gap: 2px; /* Reduce gap further */
+  }
 }
