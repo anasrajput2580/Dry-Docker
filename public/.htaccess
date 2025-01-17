@@ -1,0 +1,13 @@
+# Disable MultiViews to prevent conflicts
+Options -MultiViews
+
+# Enable mod_rewrite
+RewriteEngine On
+
+# If the request is for an existing file or directory, serve it
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Redirect all other requests to index.html
+RewriteRule ^ index.html [L]
